@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Practivo - Practice Made Perfect</title>
+        <meta name="description" content="The only writing service you will need. Let Practivo take care of your text work.">
+        <meta name="keywords" content="writing, proofreading, revision, text, writer, content writer, copywriter, copywriting, pitch deck writing, pitch deck, ux writing, ux writer">
+        <meta name="author" content="Practivo Team">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="files/favicon.svg">
+    </head>
+    <body>
+        
+        <header>
+            <nav>
+                <div class="logo">
+                    <div class="logoface">
+                        <div class="logo-top"></div>
+                        <div class="logo-bottom"></div>
+                    </div>
+                    <div class="logotype">
+                        <a href="https:www.practivo.pro"><h1>Practivo</h1></a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a href="#" class="menu-item">About</a>
+                    <a href="#" class="menu-item">Blog</a>
+                    <a href="#" class="button purple">Contact us</a>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="bg-effect-1">
+                    <div class="circle cgr"></div>
+                    <div class="circle cpp"></div>
+                    <div class="circle cbt"></div>
+            </div>
+            <div class="landing">
+                <div class="hero">
+                    <div class="slogan">
+                        <h1 aria-label="Practice Made Perfect">
+                            <span class="typewriter thick"></span>
+                        </h1>
+                    </div>
+                    <p class="slogan-line">Don’t get your hands dirty with text work. Leave it to us today and get results tomorrow.</p>
+                    <a href="#" class="button blue">Use our Quick Calculator</a>
+                    <p class="small-text">Or check our cool services below!</p>
+                </div>
+                <div class="services">
+                    <div class="services-list">
+                        <div class="service content x">Content Writing</div>
+                        <div class="service proof">Proofreading</div>
+                        <div class="service pitch">Pitch Decks</div>
+                        <div class="service uxwriting">UX Writing</div>
+                    </div>
+                    <div class="service-box">
+                        <div class="box content-box x">
+                            <p class="service-line">Our superpower is writing content for blogs, journals, and social media.
+                                <br>Don’t take our word for it, though. Drop us a topic and get your first article in less than a day.</p>
+                            <a href="#" class="service-img"><img src="files/content.svg"/></a>
+                        </div>
+                        <div class="box proof-box">
+                            <p class="service-line">Grammarly is good, but nothing can beat humans in detecting grammar mistakes!
+                                <br>We will make your text natural AND flawless.</p>
+                            <a href="#" class="service-img"><img src="files/proofreading.svg"/></a>
+                        </div>
+                        <div class="box pitch-box">
+                            <p class="service-line">Writing a pitch deck for your business can be tricky, but we know the tricks!
+                                <br>We will conduct the necessary research, write the content, and prepare the slides in less than a week.</p>
+                            <a href="#" class="service-img"><img src="files/pitch.svg"/></a>
+                        </div>
+                        <div class="box ux-box">
+                            <p class="service-line">You’ve got a website/app but you don’t know what to write on it. Well, we do!
+                                <br>Take your product copy from stale to stunning real quick.</p>
+                            <a href="#" class="service-img"><img src="files/ux.svg"/></a>
+                        </div>
+                    </div>
+                    <div class="services-backdrop"></div>
+                </div>
+            </div>
+            <div class="rest">
+                <div class="contact">
+                    <a href="#" class="button purple">Get in Touch</a>
+                </div>
+                <div class="partner">
+                    <h1 class="partner-header">Our Partner Clients</h1>
+                    <div class="partner-list">
+                       <img src="files/partnerkin.svg" title="partnerkin" class="partner-img"/>
+                       <img src="files/pengyi.svg" title="partnerkin" class="partner-img"/>
+                       <img src="files/sleepingocean.svg" title="partnerkin" class="partner-img"/>
+                    </div>
+                    <div class="bg-effect-2">
+                        <div class="circle cgr"></div>
+                        <div class="circle cgb"></div>
+                        <div class="circle ctg"></div>
+                    </div>
+                </div>
+                <div class="star-effect">
+                    <img src="files/leftstar.svg" class="leftstar">
+                    <img src="files/rightstar.svg" class="rightstar">
+
+                </div>
+                <div class="calculator" id="form">
+                    <h1 class="calc-header">Get an Estimate on your Project</h1>
+                    <form class="calc-box" onsubmit="sendEmail(); return false;" method="post">
+                        <div class="options">
+                            <div class="type">
+                                <p class="question">
+                                    Project Type
+                                </p>
+                                <div class="choices" id="type">
+                                    <label class="choice first active"><input class="choice-input" name="project-type" type="radio" value="short-term" id="short-term" onclick="calculateTotal(); setValue(); changePopUp();">Short-term</label>
+                                    <label class="choice first"><input class="choice-input" name="project-type" type="radio" value="long-term" id="long-term" onclick="calculateTotalLong(); setValue(); changePopUp();">Long-term</label>
+                                </div>
+                            </div>
+                            <div class="type">
+                                <p class="question">
+                                    Delivery Time
+                                </p>
+                                <div class="choices" id="time">
+                                    <label class="choice second one-day"><input class="choice-input project-time" name="project-time" type="radio" value="one-day" id="one-day" onclick="calculateTotal();"/>One Day</label>
+                                    <label class="choice one-week second active"><input class="choice-input project-time" name="project-time" type="radio" value="one-week" id="one-week" onclick="calculateTotal();"/>Less than a week</label>
+                                    <label class="choice two-weeks second"><input class="choice-input project-time" name="project-time" type="radio" value="two-weeks" id="two-weeks" onclick="calculateTotal();"/>Less than two weeks</label>
+                                    <label class="choice na second"><input class="choice-input project-time" name="project-time" type="radio" value="na" id="na" onclick="calculateTotal();"/>Doesn't matter</label>
+                                </div>
+                            </div>
+                            <div class="type">
+                                <p class="question">
+                                    Choose Service
+                                </p>
+                                <div class="choices" id="project">
+                                    <label class="choice third active contentwriting"><input class="choice-input" name="project" type="radio" value="content" id="content" onclick="calculateTotal(); setValue();"/>Content Writing</label>
+                                    <label class="choice third proofreading"><input class="choice-input" name="project" type="radio" value="proofreading" id="proofreading" onclick="calculateTotal(); setValue();"/>Proofreading</label>
+                                    <label class="choice third pitchdeck"><input class="choice-input" name="project" type="radio" value="pitch" id="pitch" onclick="calculateTotal(); setValue();"/>Pitch Deck</label>
+                                    <label class="choice third ux"><input class="choice-input" name="project" type="radio" value="ux" id="ux" onclick="calculateTotal(); setValue();"/>UX Writing</label>
+                                </div>
+                            </div>
+                            <div class="type">
+                                <p class="question">
+                                    Choose Theme
+                                </p>
+                                <div class="choices" id="theme">
+                                    <input class="choice-input" name="project-theme" type="radio" value="general" id="general" onclick="calculateTotal();"><label for="general" class="choice fourth active">General</label>
+                                    <input class="choice-input" name="project-theme" type="radio" value="formal" id="formal" onclick="calculateTotal();"><label for="formal" class="choice fourth">Formal Correspondence</label>
+                                    <input class="choice-input" name="project-theme" type="radio" value="tech" id="tech" onclick="calculateTotal();"><label for="tech" class="choice fourth">Technical</label>
+                                    <input class="choice-input" name="project-theme" type="radio" value="other" id="other" onclick="calculateTotal();"><label for="other" class="choice fourth">Other</label>
+                                </div>
+                            </div>
+                            <div class="type">
+                                <p class="question" id="amount">
+                                    Enter Volume
+                                </p>
+                                <input type="number" maxLength="8" max="10000" step="1" pattern="[0-9]+" onkeydown="if(event.key==='.'){event.preventDefault();}"  onpaste="return false;" onkeypress="RestrictFirstZero(event)" class="input" id="input" name="amount" placeholder="Enter the amount of work" onkeyup="calculateTotal();" oninput="checkValue(this);" required>
+                                <div class="variable" id="variable">
+                                    <div class="var words active">Words</div>
+                                    <div class="var pages">Pages</div>
+                                    <div class="var slides">Slides</div>
+                                    <div class="var screens">Screens</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-part4">
+                            <div class="alert-cont2">
+                                <p id="alert2" class="alert2"></p>
+                            </div>
+                            <div class="close-cont2">
+                                <div class="close2"></div>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <p class="answer">
+                                Estimated Budget:
+                            </p>
+                            <div id="output" class="output">
+                            </div>
+                        </div>
+                        <div class="contact2">
+                            <div class="contact-part1">
+                                <p class="happy">Happy with the form? Send us your email and we’ll get in touch!</p>
+                            </div>
+                            <div class="contact-part3">
+                                <div class="alert-cont">
+                                    <p id="alert" class="alert"></p>
+                                </div>
+                                <div class="close-cont">
+                                    <div class="close"></div>
+                                </div>
+                            </div>
+                            <div class="contact-part2">
+                                <p class="question">
+                                    Enter Email *
+                                </p>
+                                <form>
+                                    <input type="email" class="input email" id="email" placeholder="Enter your email address" required>
+                                    <input type="submit" class="button" id="submit" value="Submit">
+                                </form>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact">
+                    <h1>The Only <span class="pink-text">Writing Service</span> You will need</h1>
+                    <div class="button pink">Get Started Now</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>to be created</p>
+            </div>
+        </footer>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "hello@practivo.pro",
+                Password : "0BAC3CB65FCF1EAB1A351025E6D302D25489",
+                To : 'practivopro@gmail.com',
+                From : 'hello@practivo.pro',
+                Subject : "New Project Enquiry!",
+                Body : "Email: " + document.getElementById("email").value + "<br> Project Type: " + document.querySelector('input[name="project-type"]:checked').value + "<br> Delivery Time: " + document.querySelector('input[name="project-time"]:checked').value + "<br> Service: " + document.querySelector('input[name="project"]:checked').value + "<br> Theme: " + document.querySelector('input[name="project-theme"]:checked').value + "<br> Amount: " + document.getElementById('input').value + "<br> Total Price: " + document.getElementById('output').innerHTML,
+                }).then(
+                document.getElementById('alert').innerHTML = "Your message has been sent! We will get in touch with you in 24 hours to learn more about your project.",
+                document.querySelector('.contact-part3').classList.add('active'),
+                );
+            }
+            
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+
+            function int(value) {
+                return parseInt(value);
+            }
+
+            function checkValue(sender) {
+                if (document.getElementById('content').checked) {
+                    let value = parseInt(sender.value);
+                    if (document.getElementById('long-term').checked) {
+                        let min = 10000;
+                        let max = 1000000;
+                        if (value<min) {
+                        sender.value = min;
+                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 10,000 words. For fewer words, select Short-term.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                        if (value>max) {
+                        sender.value = max;
+                        document.getElementById('alert2').innerHTML = "For more than 1,000,000 words, please contact us via email.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                    else {
+                        let max = 10000;
+                        if (value>max) {
+                            sender.value = max;
+                            document.getElementById('alert2').innerHTML = "For amounts more than 10,000 words, please contact us via email or select Long-term.",
+                            document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                }
+
+                if (document.getElementById('proofreading').checked) {
+                    let value = parseInt(sender.value);
+                    if (document.getElementById('long-term').checked) {
+                        let min = 50;
+                        let max = 5000;
+                        if (value<min) {
+                        sender.value = min;
+                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 50 pages. For fewer pages, select Short-term.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                        if (value>max) {
+                        sender.value = max;
+                        document.getElementById('alert2').innerHTML = "For more than 5,000 pages, please contact us via email.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                    else {
+                        let max = 50;
+                        if (value>max) {
+                            sender.value = max;
+                            document.getElementById('alert2').innerHTML = "For amounts more than 50 pages, please contact us via email or select Long-term.",
+                            document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                }
+
+                if (document.getElementById('pitch').checked) {
+                    let value = parseInt(sender.value);
+                    if (document.getElementById('long-term').checked) {
+                        let min = 25;
+                        let max = 2000;
+                        if (value<min) {
+                        sender.value = min;
+                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 25 slides. For fewer slides, select Short-term.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                        if (value>max) {
+                        sender.value = max;
+                        document.getElementById('alert2').innerHTML = "For more than 2,000 slides, please contact us via email.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                    else {
+                        let max = 25;
+                        if (value>max) {
+                            sender.value = max;
+                            document.getElementById('alert2').innerHTML = "For amounts more than 25 slides, please contact us via email or select Long-term.",
+                            document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                }
+
+                if (document.getElementById('ux').checked) {
+                    let value = parseInt(sender.value);
+                    if (document.getElementById('long-term').checked) {
+                        let min = 100;
+                        let max = 10000;
+                        if (value<min) {
+                        sender.value = min;
+                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 100 screens. For fewer screens, select Short-term.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                        if (value>max) {
+                        sender.value = max;
+                        document.getElementById('alert2').innerHTML = "For more than 10,000 screens, please contact us via email.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                    else {
+                        let max = 100;
+                        if (value>max) {
+                            sender.value = max;
+                            document.getElementById('alert2').innerHTML = "For amounts more than 100 screens, please contact us via email or select Long-term.",
+                            document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                }
+
+            }
+
+            function changePopUp() {
+                if (document.getElementById('short-term').checked) {
+                    document.querySelector('.contact-part4').classList.remove('active');
+                }
+
+                if (document.getElementById('long-term').checked) {
+                    document.querySelector('.contact-part4').classList.remove('active');
+                }
+            }
+
+            function setValue() {
+                if (document.getElementById('content').checked) {
+                    if (document.getElementById('short-term').checked) {
+                        document.getElementById('input').value = 1000;
+                        return calculateTotal();
+                    }
+                    else if (document.getElementById('long-term').checked) {
+                        document.getElementById('input').value = 10000;
+                        return calculateTotalLong();
+                    }
+                }
+
+                if (document.getElementById('proofreading').checked) {
+                    if (document.getElementById('short-term').checked) {
+                        document.getElementById('input').value = 1;
+                        return calculateTotal();
+                    }
+                    else if (document.getElementById('long-term').checked) {
+                        document.getElementById('input').value = 50;
+                        return calculateTotalLong();
+                    }
+                }
+
+                if (document.getElementById('pitch').checked) {
+                    if (document.getElementById('short-term').checked) {
+                        document.getElementById('input').value = 15;
+                        return calculateTotal();
+                    }
+                    else if (document.getElementById('long-term').checked) {
+                        document.getElementById('input').value = 25;
+                        return calculateTotalLong();
+                    }
+                }
+
+                if (document.getElementById('ux').checked) {
+                    if (document.getElementById('short-term').checked) {
+                        document.getElementById('input').value = 1;
+                        return calculateTotal();
+                    }
+                    else if (document.getElementById('long-term').checked) {
+                        document.getElementById('input').value = 100;
+                        return calculateTotalLong();
+                    }
+                }
+
+
+            }
+
+
+
+            $(document).on('keyup', '.input', function() {
+                var x = $(this).val();
+                $(this).val(x.toString().replace(/,/g, ""));
+            });
+
+            var project_type = new Array();
+            project_type["short-term"]=1;
+            project_type["long-term"]=0.85;
+
+            var project_time = new Array();
+            project_time["one-day"]=1.5;
+            project_time["one-week"]=1.2;
+            project_time["two-weeks"]=1;
+            project_time["na"]=1;
+
+            var project_name = new Array();
+            project_name["content"]=0.03;
+            project_name["proofreading"]=10;
+            project_name["pitch"]=25;
+            project_name["ux"]=15;
+
+            var project_theme = new Array();
+            project_theme["general"]=1;
+            project_theme["formal"]=1.25;
+            project_theme["tech"]=1.5;
+            project_theme["other"]=1.2;
+
+            function getProjectType() {
+                var typeRadio = document.getElementsByName('project-type');
+
+                for (i=0; i < typeRadio.length; i++) {
+                    if (typeRadio[i].checked) {
+                        user_input = typeRadio[i].value;
+                    }
+                }
+                return project_type[user_input];
+            }
+
+            function getProjectTime() {
+                var typeRadio = document.getElementsByName('project-time');
+                var typeLabel = document.querySelector('.choice');
+
+                for (i=0; i < typeRadio.length; i++) {
+                    if (typeRadio[i].checked) {
+                        user_input = typeRadio[i].value;
+                    }
+                }
+                return project_time[user_input];
+            }
+
+            function getProjectName() {
+                var typeRadio = document.getElementsByName('project');
+
+                for (i=0; i < typeRadio.length; i++) {
+                    if (typeRadio[i].checked) {
+                        user_input = typeRadio[i].value;
+                    }
+                }
+                return project_name[user_input];
+            }
+
+            function getProjectTheme() {
+                var typeRadio = document.getElementsByName('project-theme');
+
+                for (i=0; i < typeRadio.length; i++) {
+                    if (typeRadio[i].checked) {
+                        user_input = typeRadio[i].value;
+                    }
+                }
+                return project_theme[user_input];
+            }
+
+
+            function RestrictFirstZero(e) {
+                if (e.srcElement.value.length == 0 && e.which == 48) {
+                    e.preventDefault();
+                    return false;
+                }
+            };
+ 
+            function PreventFirstZero(event) {
+                if (event.srcElement.value.charAt(0) == '0') {
+                    event.srcElement.value = event.srcElement.value.slice(1);
+                }
+            };
+
+            function calculateTotal() {
+                var input = document.getElementById('input').value;
+
+                input = input || 0
+
+                var total = getProjectType() * getProjectTime() * getProjectName() * getProjectTheme() * parseInt(input);
+                
+                document.getElementById('output').innerHTML = "$ " + total;
+
+                if (document.getElementById('long-term').checked) {
+                    return calculateTotalLong();
+                }
+            };
+
+            function calculateTotalLong() {
+                var input = document.getElementById('input').value;
+
+                input = input || 0
+
+                var totalLong = getProjectType() * getProjectName() * getProjectTheme() * parseInt(input);
+                
+                document.getElementById('output').innerHTML = "$ " + totalLong;
+
+                if (document.getElementById('short-term').checked) {
+                    return calculateTotal();
+                }
+            };
+
+            window.onload = document.getElementById('short-term').click();
+            window.onload = document.getElementById('one-week').click();
+            window.onload = document.getElementById('content').click();
+            window.onload = document.getElementById('general').click();
+        </script>
+        <script src="script.js">
+            
+        </script>
+    </body>
+</html>
