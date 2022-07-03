@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth !important;
+}
+
 :root {
     --purple: #8F49E9;
     --bg: #232026;
@@ -46,8 +50,11 @@ body {
     gap: 12em;
     position: relative;
     align-items: stretch;
-    overflow-x: hidden;
 }
+
+
+
+
 
 h1{
     color: var(--white);
@@ -859,12 +866,22 @@ footer {
 }
 
 @media screen and (max-width: 428px) {
-    body {
-        margin-left: 0;
-        margin-right: 0;
+
+    html, body {
+        overflow-x: hidden;
         max-width: 100%;
+        overflow-y: scroll;
+    }
+
+    html{
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
         align-items: center;
-        height: 50vh;
+        gap: 5em;
+        scroll-behavior: smooth; 
     }
 
     .menu-fixed {
@@ -945,4 +962,21 @@ footer {
     .purple-item {
         color: var(--purple);
     }
+
+    .logo {
+        margin: 3em;
+    }
+
+    .contact-header {
+        font-size: 30px;
+        text-align: center;
+        width: 65%;
+        line-height: normal;
+    }
+
+    .contact {
+        gap: 7em;
+    }
+
+
 }
