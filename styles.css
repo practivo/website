@@ -28,10 +28,10 @@
 
 body {
     background-color: var(--bg);
-        margin-left: 22%;
-        margin-right: 22%;
-        margin-top: 3em;
-        margin-bottom: 0;
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 3em;
+    margin-bottom: 0;
     font-family: 'Catamaran';
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -46,6 +46,7 @@ body {
     gap: 12em;
     position: relative;
     align-items: stretch;
+    overflow-x: hidden;
 }
 
 h1{
@@ -172,7 +173,7 @@ nav {
     top: 15em;
     z-index: -2;
     opacity: 97%;
-    margin: auto 22%;
+
 }
 
 .cgr {
@@ -759,7 +760,10 @@ footer {
 
 
 
-
+.menu-fixed {
+    display: none;
+    visibility: hidden;
+}
 
 
 
@@ -851,5 +855,94 @@ footer {
 
     .partner-img {
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .menu-fixed {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--bg);
+        visibility: visible;
+        height: 100px;
+        z-index: 1000;
+        max-width: 100%;
+        margin-bottom: 0;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 5em;
+        bottom: 0;
+        position: fixed;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.13);
+    }
+
+    header {
+        max-width: 100%;
+    }
+
+    .menu {
+        visibility: hidden;
+        display: none;
+    }
+
+    .landing {
+        max-width: 100%;
+    }
+
+    .partner-list {
+        flex-direction: column;
+        gap: 5em;
+        align-items: center;
+
+    }
+
+    .partner-img {
+        width: 40%;
+    }
+    .hero {
+        max-width: 100%;
+    }
+
+    .rest {
+        max-width: 100%;
+    }
+
+    .slogan {
+        font-size: small;
+    }
+
+    .slogan-line {
+        font-size: 19px;
+        overflow-wrap: normal;
+        width: 25%;
+        text-align:justify;
+    }
+    
+    .item-order {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+
+    }
+
+    .menu-item-fixed {
+        font-size: 14px;
+    }
+
+    .purple-item {
+        color: var(--purple);
     }
 }

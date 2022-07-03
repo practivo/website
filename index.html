@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="files/favicon.svg">
     </head>
     <body>
@@ -23,13 +24,16 @@
                         <a href="https:www.practivo.pro"><h1>Practivo</h1></a>
                     </div>
                 </div>
+                
                 <div class="menu">
                     <a href="#" class="menu-item">About</a>
                     <a href="#" class="menu-item">Blog</a>
                     <a href="#" class="button purple">Contact us</a>
                 </div>
             </nav>
+            
         </header>
+        
         <main class="main">
             <div class="bg-effect-1">
                     <div class="circle cgr"></div>
@@ -205,6 +209,20 @@
                 </div>
             </div>
         </main>
+        <div class="menu-fixed">
+            <div class="item-order">
+                <img src="files/about.svg" class="menu-icon-img"/>
+                <a href="#" class="menu-item-fixed">About</a>
+            </div>
+            <div class="item-order">
+                <img src="files/blog.svg" class="menu-icon-img">
+                <a href="#" class="menu-item-fixed">Blog</a>
+            </div>
+            <div class="item-order">
+                <img src="files/contact.svg" class="menu-icon-img"/>
+                <a href="#" class="menu-item-fixed purple-item">Contact us</a>
+            </div>
+        </div>
         <footer>
             <div>
                 <p>to be created</p>
@@ -216,10 +234,10 @@
             function sendEmail() {
                 Email.send({
                 Host : "smtp.elasticemail.com",
-                Username : "hello@practivo.pro",
-                Password : "0BAC3CB65FCF1EAB1A351025E6D302D25489",
-                To : 'practivopro@gmail.com',
-                From : 'hello@practivo.pro',
+                Username : "dinomitedev@gmail.com",
+                Password : "28DE18B7D7611A6BC45D792BF7939BA9457B",
+                To : 'hello@practivo.pro',
+                From : 'dinomitedev@gmail.com',
                 Subject : "New Project Enquiry!",
                 Body : "Email: " + document.getElementById("email").value + "<br> Project Type: " + document.querySelector('input[name="project-type"]:checked').value + "<br> Delivery Time: " + document.querySelector('input[name="project-time"]:checked').value + "<br> Service: " + document.querySelector('input[name="project"]:checked').value + "<br> Theme: " + document.querySelector('input[name="project-theme"]:checked').value + "<br> Amount: " + document.getElementById('input').value + "<br> Total Price: " + document.getElementById('output').innerHTML,
                 }).then(
@@ -521,9 +539,15 @@
             window.onload = document.getElementById('one-week').click();
             window.onload = document.getElementById('content').click();
             window.onload = document.getElementById('general').click();
+
+            
         </script>
         <script src="script.js">
             
+        </script>
+        <script>
+            document.cookie = 'cookie1=value1; SameSite=Lax';
+            document.cookie = 'cookie2=value2; SameSite=None; Secure';
         </script>
     </body>
 </html>
