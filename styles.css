@@ -358,7 +358,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 2em;
     gap: 5em;
 }
 
@@ -373,7 +372,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 12em;
+    gap: 10em;
     align-items: center;
 }
 
@@ -978,5 +977,79 @@ footer {
         gap: 7em;
     }
 
+    .calculator {
+        width: 25%;
+        padding: 2em;
+        gap: 7em;
+        height: 128em;
+    }
 
+    .calc-header {
+        font-size: 35px;
+        font-weight: lighter;
+        line-height: normal;
+    }
+
+    .type {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+
+    .first {
+        padding: 0.5em 1em;
+        flex-grow: 2;
+    }
+
+    .second {
+        flex-grow: 2;
+    }
+
+    .choices {
+        flex-basis: 100%;
+        flex-flow: row wrap;
+    }
+
+    .choice {
+        justify-content: center;
+    }
+
+    .third {
+        flex-grow: 2;
+    }
+
+    .fourth {
+        flex-grow: 2;
+    }
+
+    .contact-part2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact2 {
+        padding: 2em;
+        margin: 0;
+    }
+
+    #submit {
+        padding: 0.3em 3.5em;
+    }
+
+    #email {
+        width: 9.5em;
+    }
+
+    .email-header {
+        margin-bottom: -20px;
+
+    }
+
+    .bg-effect-2 {
+        gap: 0;
+        opacity: 60%;
+    }
 }
