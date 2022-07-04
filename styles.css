@@ -32,10 +32,7 @@
 
 body {
     background-color: var(--bg);
-    margin-left: 22%;
-    margin-right: 22%;
-    margin-top: 3em;
-    margin-bottom: 0;
+    margin: 0 auto;
     font-family: 'Catamaran';
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -53,13 +50,19 @@ body {
     overflow-x: hidden;
 }
 
+nav {
+    margin: 3em 20% 0 20%;
+}
 
 main {
     display: flex;
     flex-direction: column;
-
+    margin: 0 20%;
 }
 
+.header {
+    margin: 0 20%;
+}
 
 h1{
     color: var(--white);
@@ -287,7 +290,7 @@ nav {
     width: auto;
     border-radius: 0.5em;
     position: relative;
-    margin-top: 5em;
+    margin-top: 3em;
     z-index: 0;
     display: flex;
     flex-direction: column;
@@ -386,7 +389,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin: 0 22%;
 }
 
 .bg-effect-2 {
@@ -410,10 +413,10 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20%;
+    gap: 15%;
     position: relative;
     top: 10em;
-    
+
 }
 
 .partner-img {
@@ -470,7 +473,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1em;
-
+    align-items: flex-start;
 }
 
 .type {
@@ -481,6 +484,7 @@ nav {
     margin: 0;
     padding: 0;
     width: auto;
+    flex-grow: 2;
 }
 
 .choices {
@@ -533,9 +537,9 @@ nav {
 
 .input {
     display: flex;
-    flex-direction: row;
+    flex-direction: row nowrap;
     align-items: center;
-    padding: 1em 4%;
+    padding: 1em 10%;
     background-color: var(--twhite);
     text-align: left;
     font-size: 20px;
@@ -547,6 +551,7 @@ nav {
     text-overflow: nowrap;
     color: var(--white);
     font-family: 'Catamaran';
+    flex-basis: auto;
 }
 
 ::placeholder {
@@ -717,9 +722,109 @@ input::-webkit-inner-spin-button {
 footer {
     position: relative;
     width: 100%;
-    height: 30em;
-    background-color: var(--twhite7);
-    visibility: hidden;
+    height: 25em;
+    background-color: #2B272E;
+    margin: 0;
+    padding: 0 22% 0 22%;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.branding {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.logo-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.logo-tag {
+    font-size: 24px;
+}
+
+.footer-location {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.footer-email {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+
+.logotop-footer {
+    height: 72px;
+    width: 36px;
+}
+
+.logobottom-footer {
+    height: 18px;
+    width: 36px;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-top: 3em;
+    gap: 3em;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    padding-top: 3em;
+    gap: 1em;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    padding-top: 3em;
+    justify-content: flex-start;
+    gap: 12em;
+    align-items: flex-end;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.footer-item {
+    font-size: 20px;
+
+}
+
+.footer-item:hover {
+    color: var(--purple);
+
+}
+
+.social-img {
+    width: 30px;
+    height: 30px;
+}
+
+.rights {
+    font-size: 15px;
+}
+
+.social-button {
+    padding: 0.5em;
+    align-items: center;
+    align-items: center;
+    display: flex;
 }
 
 .contact-part4 {
@@ -845,31 +950,12 @@ footer {
     gap: 5%;
 }
 
-@media only screen and (max-width: 1618px) {
-    body {
-        margin-left: 15em;
-        margin-right: 15em;
-
-    }
+.menu-fixed.class > * {
+    z-index: 1000;
 }
 
-@media only screen and (max-width: 1522px) {
-    body {
-        margin-left: 10em;
-        margin-right: 10em;
-
-    }
-}
-
-@media only screen and (max-width: 1365px) {
-    body {
-        margin-left: 5em;
-        margin-right: 5em;
-    }
-
-    .partner-list {
-        width: 50%;
-    }
+footer.class > * {
+    z-index: 1005;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -913,14 +999,16 @@ footer {
 
     .menu-item-fixed {
         font-size: 13px;
+        z-index: 1000;
     }
+
     .item-order {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 0.1em;
-
+        z-index: 1000;
     }
 
     .slogan {
@@ -936,10 +1024,14 @@ footer {
 
     header {
         max-width: 100%;
+        margin: 0;
     }
 
+    .landing {
+        margin: 0;
+    }
     nav {
-
+        margin: 0;
         justify-content: center;
     }
 
@@ -1107,6 +1199,7 @@ footer {
 
     .slider {
         max-width: 100%;
+        margin-top: 3em;
     }
 
 
@@ -1117,6 +1210,7 @@ footer {
 
     main {
         gap: 3em;
+        margin: 0;
     }
 
     .partner-header {
@@ -1128,5 +1222,40 @@ footer {
         visibility: visible;
         height: 100%;
     }
-}
 
+    footer {
+        flex-direction: column;
+        padding: 2em;
+        padding-top: 1em;
+        height: 100%;
+        width: 110%;
+        z-index: 1005;
+    }
+
+    footer.class > * {
+        z-index: 1005;
+    }
+
+    
+    .col1 {
+        width: 100%;
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 100%;
+        align-items: flex-start;
+        gap: 3em;
+    }
+
+    .footer-item {
+        font-size: 22px;
+    }
+
+    .social-button {
+        padding: 0.5em;
+    }
+}
