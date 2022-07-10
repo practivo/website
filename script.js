@@ -28,9 +28,43 @@ const na = document.querySelector('.na');
 const projectTime = document.getElementsByName('project-time');
 const closeButton = document.querySelector('.close-cont');
 const contactCont = document.querySelector('.contact-part3');
-const closeButton2 = document.querySelector('.close-cont2');
+const closeButton2 = document.querySelector('.close2');
 const contactCont2 = document.querySelector('.contact-part4');
 
+const link = document.querySelector(".link");
+const copyAlert = document.querySelector(".alert3");
+const modal = document.querySelector(".modal");
+const openModalBtn = document.querySelector(".open-modal");
+const closeModalBtn = document.querySelector("#close-modal");
+const linkCon = document.querySelector(".link-con");
+
+closeModalBtn.addEventListener("click", closeModal);
+openModalBtn.addEventListener("click", openModal);
+
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+function openModal() {
+  modal.style.display = "block";
+}
+
+linkCon.addEventListener("click", () => {
+  navigator.clipboard.writeText(link.textContent);
+  showAlert();
+});
+
+function showAlert() {
+  copyAlert.style.display = "block";
+  setTimeout(function () {
+    copyAlert.style.display = "none";
+  }, 1000);
+}
+
+
+
+  
 
 content.addEventListener("click", () => {
     content.classList.add("x");
@@ -146,10 +180,11 @@ shortTerm.addEventListener('click', () => {
     na.classList.remove('disabled');
 });
 
-closeButton.addEventListener('click', () => {
-    contactCont.classList.remove('active');
-});         
+// closeButton.addEventListener('click', () => {
+//     contactCont.classList.remove('active');
+// });         
 
 closeButton2.addEventListener('click', () => {
     contactCont2.classList.remove('active');
 }); 
+

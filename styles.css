@@ -44,7 +44,7 @@ body {
     width: auto;
     display: flex;
     flex-direction: column;
-    gap: 12em;
+    gap: 10em;
     position: relative;
     align-items: stretch;
     overflow-x: hidden;
@@ -58,6 +58,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0 20%;
+    gap: 4em;
 }
 
 .header {
@@ -290,7 +291,7 @@ nav {
     width: auto;
     border-radius: 0.5em;
     position: relative;
-    margin-top: 3em;
+
     z-index: 0;
     display: flex;
     flex-direction: column;
@@ -389,7 +390,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 22%;
 }
 
 .bg-effect-2 {
@@ -428,7 +428,7 @@ nav {
 
 .calculator {
     background: linear-gradient(0deg, var(--bg), var(--twhite));
-    height: 50em;
+    height: 100%;
     width: auto;
     border-radius: 0.5em;
     position: relative;
@@ -725,7 +725,6 @@ footer {
     height: 25em;
     background-color: #2B272E;
     margin: 0;
-    padding: 0 22% 0 22%;
     display: flex;
     flex-direction: row;
     gap: 3em;
@@ -772,7 +771,7 @@ footer {
 .col1 {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    z-index: 1005;
     padding-top: 3em;
     gap: 3em;
 }
@@ -780,7 +779,7 @@ footer {
 .col2 {
     display: flex;
     flex-direction: column;
-    width: 10%;
+
     padding-top: 3em;
     gap: 1em;
 }
@@ -788,7 +787,7 @@ footer {
 .col3 {
     display: flex;
     flex-direction: column;
-    width: 18%;
+
     padding-top: 3em;
     justify-content: flex-start;
     gap: 12em;
@@ -803,6 +802,7 @@ footer {
 
 .footer-item {
     font-size: 20px;
+    z-index: 1005;
 
 }
 
@@ -825,6 +825,7 @@ footer {
     align-items: center;
     align-items: center;
     display: flex;
+    z-index: 1005;
 }
 
 .contact-part4 {
@@ -958,6 +959,25 @@ footer.class > * {
     z-index: 1005;
 }
 
+.footer-effect {
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    clip-path: polygon(-100% 0%,100% 0%,100% 200%, -100% 100%);
+    left: 40%;
+    z-index: 1003;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    margin: 0 22%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 7em;
+    width: 100%;
+}
+
 @media only screen and (max-width: 1300px) {
 
     body {
@@ -967,7 +987,6 @@ footer.class > * {
     html, body {
         overflow-x: hidden;
         max-width: 100%;
-        overflow-y: scroll;
     }
 
 
@@ -1225,8 +1244,6 @@ footer.class > * {
 
     footer {
         flex-direction: column;
-        padding: 2em;
-        padding-top: 1em;
         height: 100%;
         width: 110%;
         z-index: 1005;
@@ -1237,16 +1254,9 @@ footer.class > * {
     }
 
     
-    .col1 {
-        width: 100%;
-    }
-
-    .col2 {
-        width: 100%;
-    }
 
     .col3 {
-        width: 100%;
+
         align-items: flex-start;
         gap: 3em;
     }
@@ -1258,4 +1268,214 @@ footer.class > * {
     .social-button {
         padding: 0.5em;
     }
+
+    .columns {
+        flex-direction: column;
+        gap: 3em;
+        margin: 0 10%;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .message-row {
+        flex-wrap: wrap !important;
+    }
+
+    .email-row {
+        flex-wrap: wrap !important;
+    }
+
+    .email-button {
+        width: 100% !important;
+        justify-content: flex-start !important;
+        gap: 10% !important;
+        padding-left: 10% !important;
+    }
+
+    .telegram-button {
+        width: 100% !important;
+        justify-content: flex-start !important;
+        gap: 10% !important;
+        padding-left: 10% !important;
+    }
+
+    .slack-button {
+        width: 100% !important;
+        justify-content: flex-start !important;
+        gap: 10% !important;
+        padding-left: 10% !important;
+    }
+
+    .copy-icon {
+        max-width: 8% !important;
+    }
+
+    .modal-content {
+        gap: 0.5em !important;
+        margin: 10% auto !important;
+    }
+}
+
+.contact-button {
+    height: 60px;
+    width: 60px;
+    background-color: var(--bg);
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.contact-button:hover {
+    background-color: #232026e1;
+}
+
+.email-button {
+    width: 50%;
+}
+
+.telegram-button {
+    width: 50%;
+}
+
+.slack-button {
+    width: 50%;
+}
+
+.email-copy {
+    background-color: #2320261a;
+    height: 60px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+}
+
+.email-copy:hover {
+    background-color: #2320262a;
+}
+
+
+.copy-icon {
+    width: 10%;
+}
+
+.link-text {
+    font-size: 20px;
+}
+
+.link-con {
+    cursor: pointer;
+}
+.modal {
+    z-index: 2000;
+}
+
+#open-modal {
+    transition: all 0.3s ease;
+}
+
+.button-text {
+    color: var(--white);
+    font-size: 20px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+  
+.modal-content {
+    margin: 10% auto;
+    background-color: var(--white);
+    color: var(--bg);
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2),
+      0 16px 32px rgba(0, 0, 0, 0.2), 0 32px 64px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+  
+#close-modal {
+    float: right;
+    cursor: pointer;
+    font-size: 3rem;
+}
+  
+.close-modal, .close3:before, .close3:after {
+    background-color: var(--bg);
+    margin: 2% 2%;
+}
+  
+.modal-content .link {
+    cursor: pointer;
+}
+  
+.modal-header{
+    color: var(--bg);
+    font-size: 25px;
+}
+
+.alert3 {
+    position: fixed;
+    z-index: 2005;
+    animation: scale;
+    display: none;
+    color: var(--green);
+    position: relative;
+}
+
+.email-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: nowrap;
+}
+
+.social-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.message-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: nowrap;
+}
+
+.close3:before, .close3:after {
+    position: absolute;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: var(--bg);
+    display: inline;
+    top: -10px;
+
+}
+
+.close3:before {
+    transform: rotate(45deg);
+}
+
+.close3:after {
+    transform: rotate(-45deg);
 }

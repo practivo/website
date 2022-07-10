@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -12,11 +13,10 @@
         <link rel="icon" type="image/x-icon" href="files/favicon.svg">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+        <script src="jquery-3.2.1.min.js"></script>
 				
     </head>
     <body>
-        
         <header>
             <nav>
                 <div class="logo">
@@ -32,8 +32,65 @@
                 <div class="menu">
                     <a href="#" class="menu-item">About</a>
                     <a href="#" class="menu-item">Blog</a>
-                    <a href="#" class="button purple" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact us</a>
+                    <a href="#" class="button purple open-modal" id="open-modal">Contact us</a>
                 </div>
+                <div class="modal" tabindex="-1"> 
+                    <div class="modal-content">
+                        <div>
+                            <span class="close-modal close-cont2 close3" id="close-modal"></span>
+                            <h1 class="modal-header">Contact</h1>
+                        </div>
+                        <div class="modal-row">
+                            <h3>Email</h3>
+                            <div class="email-row row">
+                                <div class="email-copy link-con">
+                                    <p class="link link-text">hello@practivo.pro</p>
+                                    <div class="alert3">
+                                        <h3>Copied!</h3>
+                                    </div>
+                                    <img class="copy-icon" src="files/copy.svg">
+                                </div>
+                                <a href="mailto:hello@practivo.pro" target="_blank" class="email-button contact-button">
+                                    <img src="files/email.svg">
+                                    <p class="button-text">Email us</p>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-row">
+                            <h3>Message</h3>
+                            <div class="message-row row">
+                                <a href="https://t.me/practivopro" target="_blank" class="telegram-button contact-button">
+                                        <img src="files/telegram.svg">
+                                        <p class="button-text">Via Telegram</p>
+                                </a>
+                                <a href="https://practivoshared.slack.com/team/U03NY3U55FD" target="_blank" class="slack-button contact-button">
+                                    <img src="files/slack.svg">
+                                    <p class="button-text">Via Slack</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-row">
+                            <h3>Social Media</h3>
+                            <div class="social-row row">
+                                <a href="#" target="_blank" class="linkedin-button contact-button">
+                                    <img src="files/linkedin.svg">
+                                </a>
+                                <a href="#" target="_blank" class="instagram-button contact-button">
+                                    <img src="files/instagram.svg">
+                                </a>
+                                <a href="#" target="_blank" class="twitter-button contact-button">
+                                    <img src="files/twitter.svg">
+                                </a>
+                                <a href="#" target="_blank" class="upwork-button contact-button">
+                                    <img src="files/upwork.svg">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </nav>
             
         </header>
@@ -133,7 +190,7 @@
             <div class="rest">
                 
                 <div class="contact">
-                    <a href="#" class="button purple">Get in Touch</a>
+                    <a class="button purple open-modal">Get in Touch</a>
                 </div>
                 <div class="partner">
                     <h1 class="partner-header">Our Partner Clients</h1>
@@ -233,7 +290,7 @@
                             <div class="contact-part1">
                                 <p class="happy">Happy with the form? Send us an email and we’ll get in touch!</p>
                             </div>
-                            <a href="#" class="button blue">Contact Us</a>
+                            <a href="#" class="button blue open-modal">Contact Us</a>
                             <!-- <div class="contact-part3">
                                 <div class="alert-cont">
                                     <p id="alert" class="alert"></p>
@@ -256,7 +313,7 @@
                 </div>
                 <div class="contact">
                     <h1 class="contact-header">The Only <span class="pink-text">Writing Service</span> You will need</h1>
-                    <div class="button pink">Get Started Now</div>
+                    <div class="button pink open-modal">Get Started Now</div>
                 </div>
             </div>
         </main>
@@ -269,59 +326,65 @@
                 <img src="files/blog.svg" class="menu-icon-img">
                 <a href="#" class="menu-item-fixed">Blog</a>
             </div>
-            <div class="item-order">
+            <div class="item-order open-modal">
                 <img src="files/contact.svg" class="menu-icon-img"/>
-                <a href="#" class="menu-item-fixed purple-item">Contact us</a>
+                <a class="menu-item-fixed purple-item">Contact us</a>
             </div>
         </div>
         <footer>
-            <div class="col1">
-                <div class="branding">
-                    <div class="logoface">
-                        <div class="logo-top logotop-footer"></div>
-                        <div class="logo-bottom logobottom-footer"></div>
-                    </div>
-                    <div class="logo-side">
-                        <div class="logotype">
-                            <a href="https:www.practivo.pro"><h1>Practivo</h1></a>
+            <div class="footer-effect">
+                <div class="circle cpp"></div>
+            </div>
+            <div class="columns">
+                <div class="col1">
+                    <div class="branding">
+                        <div class="logoface">
+                            <div class="logo-top logotop-footer"></div>
+                            <div class="logo-bottom logobottom-footer"></div>
                         </div>
-                        <div>
-                            <p class="logo-tag">Practice Made Perfect!</p>
+                        <div class="logo-side">
+                            <div class="logotype">
+                                <a href="https:www.practivo.pro"><h1>Practivo</h1></a>
+                            </div>
+                            <div>
+                                <p class="logo-tag">Practice Made Perfect!</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="footer-location">
-                        <img src="files/location.svg" class="location-icon">
-                        <p class="location-text">
-                            Melbourne, VIC, Austalia
-                        </p>
+                    <div>
+                        <div class="footer-location">
+                            <img src="files/location.svg" class="location-icon">
+                            <p class="location-text">
+                                Melbourne, VIC, Austalia
+                            </p>
+                        </div>
+                        <div class="footer-email">
+                            <img src="files/mail.svg" class="email-icon">
+                            <P class="email-text">
+                                hello@practivo.pro
+                            </P>
+                        </div>
                     </div>
-                    <div class="footer-email">
-                        <img src="files/mail.svg" class="email-icon">
-                        <P class="email-text">
-                            hello@practivo.pro
-                        </P>
+                    
+                </div>
+                <div class="col2">
+                    <a href="#" class="footer-item">About</a>
+                    <a href="#" class="footer-item">Blog</a>
+                    <a class="footer-item open-modal">Contact us</a>
+                </div>
+                <div class="col3">
+                    <div class="social">
+                        <div class="button purple social-button"><img src="files/twitter.svg" class="social-img"></div>
+                        <div class="button purple social-button"><img src="files/instagram.svg" class="social-img"></div>
+                        <div class="button purple social-button"><img src="files/linkedin.svg" class="social-img"></div>
+                        <div class="button purple social-button"><img src="files/upwork.svg" class="social-img"></div>
+                    </div>
+                    <div class="rights">
+                        <p class="rights">Practivo 2022 All Rights Reserved.</p>
                     </div>
                 </div>
-                
             </div>
-            <div class="col2">
-                <a href="#" class="footer-item">About</a>
-                <a href="#" class="footer-item">Blog</a>
-                <a href="#" class="footer-item">Contact us</a>
-            </div>
-            <div class="col3">
-                <div class="social">
-                    <div class="button purple social-button"><img src="files/twitter.svg" class="social-img"></div>
-                    <div class="button purple social-button"><img src="files/instagram.svg" class="social-img"></div>
-                    <div class="button purple social-button"><img src="files/linkedin.svg" class="social-img"></div>
-                    <div class="button purple social-button"><img src="files/upwork.svg" class="social-img"></div>
-                </div>
-                <div class="rights">
-                    <p class="rights">Practivo 2022 All Rights Reserved.</p>
-                </div>
-            </div>
+
         </footer>
 
         <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -674,6 +737,33 @@
         </script>
 
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        
+        <script>
+            var mouseDown = 0;
+            document.body.onmousedown = function() { 
+            ++mouseDown;
+            }
+            document.body.onmouseup = function() {
+            --mouseDown;
+            }
+
+            $(".open-modal").click(function(e){
+                e.preventDefault();
+                $(".modal").fadeIn(300,function(){$(this).focus();});
+            });
+
+            $('.close-modal').click(function() {
+            $(".modal").fadeOut(300);
+            });
+
+            $(".modal").on('click',function(){
+                    $(".modal").fadeOut(100);
+            });
+
+            $(".modal-content").on('click', (e)=>{
+                e.stopPropagation()
+            })
+        </script>
         
     </body>
 </html>
