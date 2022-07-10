@@ -50,6 +50,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 nav {
     margin: 3em 20% 0 20%;
 }
@@ -1275,6 +1279,26 @@ footer.class > * {
         margin: 0 10%;
     }
 
+    .about-hero {
+        flex-direction: column !important;
+        margin: 0 10%;
+        align-items: center;
+    }
+
+    .about-hero-img {
+        width: 100% !important;
+        max-width: 700% !important;
+    }
+
+    .hero-part2-text {
+        margin: 0 10%;
+    }
+
+    .hero-blur {
+        left: 0 !important;
+        top: 25%;
+        opacity: 50%;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -1478,4 +1502,47 @@ footer.class > * {
 
 .close3:after {
     transform: rotate(-45deg);
+}
+
+.selected-menu-item {
+    color: var(--purple);
+}
+
+.about-hero {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+.cp {
+    background-color: #8e49e9c0;
+}
+
+.hero-blur {
+    left: 60%;
+    position: absolute;
+    z-index: -500;
+    opacity: 60%;
+}
+
+.about-hero-p {
+    font-size: 20px;
+}
+
+.hero-part2-text {
+    font-size: 20px;
+}
+
+.about-hero-part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.about-hero-img {
+    max-height: 40%;
+    max-width: 40%;
+    height: 100%;
+    width: auto;
+    pointer-events: none;
 }
