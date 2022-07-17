@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>About us | Practivo - Practice Made Perfect</title>
+        <title>Blog | Practivo - Practice Made Perfect</title>
         <meta name="description" content="The only content writing service you will need. Let Practivo take care of your text work.">
         <meta name="keywords" content="writing, proofreading, revision, text, writer, content writer, copywriter, copywriting, pitch deck writing, pitch deck, ux writing, ux writer">
         <meta name="author" content="Practivo Team">
@@ -30,8 +30,8 @@
                 </div>
                 
                 <div class="menu">
-                    <a href="about" class="menu-item selected-menu-item">About</a>
-                    <a href="blog" class="menu-item">Blog</a>
+                    <a href="about" class="menu-item">About</a>
+                    <a href="blog" class="menu-item selected-menu-item">Blog</a>
                     <a class="button purple open-modal" id="open-modal">Contact us</a>
                 </div>
                 <div class="menu-fixed">
@@ -107,47 +107,68 @@
                 
             </nav>
         </header>
-        <main>
-            <div class="about-hero">
-                    <div class="about-hero-text">
-                        <h1 class="about-hero-header">Nice to meet you</h1>
-                        <br><br>
-                        <div class="about-hero-p">
-                            <p>We are glad that you are interested in learning more about the mission of Practivo.</p>
-                            <p>We are a team of content writers, researchers, user experience designers, and proofreaders.
-                            </p>
-                            <p>We have an eye for details and a passion for harmony. Through practising writing over the years, we gained the knowledge and experience necessary to understand the value of content and to produce a content of high value. This is why we believe that we have perfected this skill.
-                            </p>
+
+
+
+
+        <main style="margin: 0;">
+            <section class="slider-nav slider blog-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 4}'>
+                
+                <!-- copy the div below -->
+                <!--  -->
+                <div>
+                    <div class="card blog-card">
+                        <div class="card-content">
+                            <img src="files/cover.png" class="post-cover">
+                            <div class="post-text">
+                                <h1 class="post-title">The best article in the world! Read it here now!</h1>
+                                <p class="post-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra est eget euismod condimentum. Sed ipsum est, tristique nec mauris sit amet, mattis egestas magna. Integer condimentum orci eu augue gravida commodo. Aenean venenatis ornare sem ac rhoncus. In accumsan dignissim rutrum.</p>
+                                <a href="sample-article" class="button purple post-cta">Continue Reading 🠒</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="circle cp hero-blur"></div>
-                    <img class="about-hero-img" src="files/computer.png">
-            </div>
-            <div class="about-hero-part2">
-                <h2 style="font-weight:normal; font-size:35px; text-align: center; line-height:0%;">"Practice Made Perfect!"</h2>
-
-                <div class="hero-part2-text">
-                    <p>
-                        Our company is a start-up, aiming to provide quality writing services to business, media, journals, blogs, and anyone who needs it.
-                    </p>
-                    <p>
-                        Nowadays, finding the right content writers and copywriters is no easy task. There are so many good writers out there but finding the ones you trust is difficult and requires trial and error. We understand this challenge.
-                    </p>
-                    <p>
-                        At Practivo, we have gathered a reliable team with exceptional expertise. Our quality standards are quite high and we are too picky about our team members. We do all of this so you don’t have to. 
-                    </p>
-                    <p>
-                        That said, we love new projects, new ideas, and new long-term or short-term partnerships. 
-                    </p>
                 </div>
+                <!--  -->
 
+                
+
+
+            </section>
+            <section class="article-list">
+                <div class="article-top">
+                        <h1 class="article-top-header">BROWSE ALL ARTICLES</h1>
+                </div>
+                <div class="article-tile">
+
+                    <!-- article card below, copy whole div -->
+                    <!--  -->
+                    <div class="article-card button purple">
+                        <a href="sample-article">
+                            <div class="article-content">
+                                <img src="files/cover.png" class="post-cover">
+                                <h1 class="post-title">What an amazing article</h1>
+                                <p class="article-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra est eget euismod condimentum. Sed ipsum est, tristique nec mauris sit amet, mattis egestas magna. Integer condimentum orci eu augue gravida commodo. Aenean venenatis ornare sem ac rhoncus. In accumsan dignissim rutrum.</p>
+                                <p class="post-para-cta">🠒 Continue Reading</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--  -->
+
+                    
+                        
+                </div>
+            </section>
+            <section>
                 <div class="contact">
-                    <h1 class="contact-header">What is <span class="pink-text">Your Story</span>? Tell us about it.</h1>
-                    <div class="button pink open-modal">Get in touch</div>
+                    <h1 class="contact-header">The Only <span class="pink-text">Writing Service</span> You will need</h1>
+                    <div class="button pink open-modal">Get Started Now</div>
                 </div>
-            </div>
-
+            </section>
         </main>
+
+
+
+
         <footer>
             <div class="footer-effect">
                 <div class="circle cpp"></div>
@@ -186,7 +207,7 @@
                 </div>
                 <div class="col2">
                     <a href="about" class="footer-item">About</a>
-                    <a href="BLOG" class="footer-item">Blog</a>
+                    <a href="blog" class="footer-item">Blog</a>
                     <a class="footer-item open-modal">Contact us</a>
                 </div>
                 <div class="col3">
@@ -530,9 +551,10 @@
                 $('.slider').slick({
                     dots: true,
                     centerMode: true,
-                    centerPadding: '2em',
+                    centerPadding: '17%',
                     infinite: true,
-                    lazyLoad: 'ondemand',
+                    autoplay: true,
+                    autoplaySpeed: 2000,
                     slidesToShow: 1,
                     slidesToScroll: 4,
                 });
