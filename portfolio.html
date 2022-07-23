@@ -1,0 +1,1000 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Portfolio | Practivo - Practice Made Perfect</title>
+        <meta name="description" content="The only content writing service you will need. Let Practivo take care of your text work.">
+        <meta name="keywords" content="writing, proofreading, revision, text, writer, content writer, copywriter, copywriting, pitch deck writing, pitch deck, ux writing, ux writer">
+        <meta name="author" content="Practivo Team">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="files/favicon.svg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="jquery-3.2.1.min.js"></script>
+				
+    </head>
+    <body>
+        <header>
+            <nav>
+                <!-- <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="switch round"></div>
+                    </label>
+                    <p style="font-size: 12px; margin-top: 15px; margin-bottom: 0;">Light Switch</p>
+                </div> -->
+                <div class="logo">
+                    <div class="logoface">
+                        <div class="logo-top"></div>
+                        <div class="logo-bottom"></div>
+                    </div>
+                    <div class="logotype">
+                        <a href="https://www.practivo.pro"><h1>Practivo</h1></a>
+                    </div>
+                </div>
+                
+                <div class="menu">
+                    <a href="about" class="menu-item">About</a>
+                    <!-- <a href="blog" class="menu-item">Blog</a> -->
+                    <a href="portfolio" class="menu-item selected-menu-item">Portfolio</a>
+                    <a class="button purple open-modal" id="open-modal">Contact us</a>
+                </div>
+                <div class="menu-fixed">
+                    <div class="item-order">
+                        <img src="files/about.svg" class="menu-icon-img"/>
+                        <a href="about" class="menu-item-fixed">About</a>
+                    </div>
+                    <!-- <div class="item-order">
+                        <img src="files/blog.svg" class="menu-icon-img">
+                        <a href="blog" class="menu-item-fixed">Blog</a>
+                    </div> -->
+                    <div class="item-order">
+                        <img src="files/blog.svg" class="menu-icon-img">
+                        <a href="portfolio" class="menu-item-fixed">Portfolio</a>
+                    </div>
+                    <div class="item-order open-modal">
+                        <img src="files/contact.svg" class="menu-icon-img"/>
+                        <a class="menu-item-fixed purple-item">Contact us</a>
+                    </div>
+                </div>
+                <div class="modal" tabindex="-1"> 
+                    <div class="modal-content">
+                        <div>
+                            <span class="close-modal close-cont2 close3" id="close-modal"></span>
+                            <h1 class="modal-header">Contact</h1>
+                        </div>
+                        <div class="modal-row">
+                            <h3>Email</h3>
+                            <div class="email-row row">
+                                <div class="email-copy link-con">
+                                    <p class="link link-text">hello@practivo.pro</p>
+                                    <div class="alert3">
+                                        <p class="alert-copied">Copied!</p>
+                                    </div>
+                                    <img class="copy-icon" src="files/copy.svg">
+                                </div>
+                                <a href="mailto:hello@practivo.pro" target="_blank" class="email-button contact-button">
+                                    <img src="files/email.svg">
+                                    <p class="button-text">Email us</p>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-row">
+                            <h3>Message</h3>
+                            <div class="message-row row">
+                                <a href="https://t.me/practivopro" target="_blank" class="telegram-button contact-button">
+                                        <img src="files/telegram.svg">
+                                        <p class="button-text">Via Telegram</p>
+                                </a>
+                                <a href="https://practivoshared.slack.com/team/U03NY3U55FD" target="_blank" class="slack-button contact-button">
+                                    <img src="files/slack.svg">
+                                    <p class="button-text">Via Slack</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-row">
+                            <h3>Social Media</h3>
+                            <div class="social-row row">
+                                <a href="#" target="_blank" class="linkedin-button contact-button">
+                                    <img src="files/linkedin.svg">
+                                </a>
+                                <a href="#" target="_blank" class="instagram-button contact-button">
+                                    <img src="files/instagram.svg">
+                                </a>
+                                <a href="#" target="_blank" class="twitter-button contact-button">
+                                    <img src="files/twitter.svg">
+                                </a>
+                                <a href="#" target="_blank" class="upwork-button contact-button">
+                                    <img src="files/upwork.svg">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </nav>
+        </header>
+
+
+
+
+        <main style="margin: 0;">
+            <a id="button"></a>
+            <!-- <section class="slider-nav slider blog-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 4}'>
+                
+
+
+                <div>
+                    <div class="card blog-card">
+                        <div class="card-content">
+                            <img src="files/cover.png" class="post-cover">
+                            <div class="post-text">
+                                <h1 class="post-title">The best article in the world! Read it here now!</h1>
+                                <p class="post-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra est eget euismod condimentum. Sed ipsum est, tristique nec mauris sit amet, mattis egestas magna. Integer condimentum orci eu augue gravida commodo. Aenean venenatis ornare sem ac rhoncus. In accumsan dignissim rutrum.</p>
+                                <a href="sample-article" class="button purple post-cta">Continue Reading 🠒</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+
+            </section> -->
+
+            
+            <section class="article-list portfolio-list">
+                
+                <div class="article-top">
+                    
+                        <h1 class="article-top-header">Browse Articles We have Written for Our Clients</h1>
+                </div>
+                <p style="font-size:20px;">Below you can find some of the articles we have written for our clients in the form of long-term or short-term projects. We have writers with expertise writing in various topics ranging from media and internet to development and blockchain.</p>
+                <div class="field-tile">
+                    <div class="marketing-toggle heading-toggle">
+                        <i class="arrow marketing-arrow"></i>
+                        <h3 class="field-heading">MARKETING AND INTERNET</h3>
+                    </div>
+                    <div class="article-tile marketing-tile">
+
+                        <!-- article card below, copy whole div -->
+                        <!--  -->
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/google_removing_cookies_aff" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/cookies.png" class="post-cover">
+                                    <h1 class="post-title">Ways to Continue Affiliate Marketing After the Removal of Cookies from Google Chrome</h1>
+                                    <p class="article-para">In case you are not aware, there has been a change in Google Chrome's system, and they are planning to get rid of the third-party cookies and to have only first-party cookies. This whole action will have an impact on user experience and affiliate marketing.</p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/improve_your_conversion_rates" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/conversion.jpeg" class="post-cover">
+                                    <h1 class="post-title">How to Improve Your Conversion Rates with a Pre-Landing in 2022 — 7 Fast and Easy Ways</h1>
+                                    <p class="article-para">Making a pre-landing page in a way that increases your conversion rate, and your overall sale, is easy and you can do it without any problem. All you have to do is make sure you follow a few solid steps, discussed in this article.
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/in-page-push-ads-guide" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/pushads.png" class="post-cover">
+                                    <h1 class="post-title">What is In-Page Push Ads — A Step by Step Guide</h1>
+                                    <p class="article-para">In-page push ads are banner ads that resemble classic web push notifications in design and usage, although entirely different from web push ads in many aspects. In this article, we are going to see how they work.
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/monetize-niche-website" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/nichewebsite.jpeg" class="post-cover">
+                                    <h1 class="post-title">How to Monetize a Niche Website in 2022 — 19 Examples</h1>
+                                    <p class="article-para">Today, we are going to investigate the ways that you can monetize your niche website and introduce you to some of the successful bloggers that managed to turn their niche website into a source of passive income.
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/install_facebook_pixel" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/facebookpixel.jpeg" class="post-cover">
+                                    <h1 class="post-title">How to Install Facebook Pixel on Website in 2022 — WordPress, Shopify, Wix, Weebly, Leadpages, Etsy and Squarespace</h1>
+                                    <p class="article-para">In this article, we will be going over the process to install Facebook Pixel on your website. Follow these steps to get done with the hard stuff and move on to the important stuff like tracking your data.
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/8_biggest_cpa_networks" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/cpanetworks.jpeg" class="post-cover">
+                                    <h1 class="post-title">8 Biggest CPA Networks — Which CPA Programs Are Really Big?</h1>
+                                    <p class="article-para">
+                                        There are a lot of companies that are working in the field of affiliate marketing. Even some of the well-known companies such as Amazon, Alibaba, or Samsung have an affiliate program. Most of these affiliate programs work with the CPA (Click-Per-Action) payment method. 
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/best_affiliate_marketing_forum" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/forums.jpeg" class="post-cover">
+                                    <h1 class="post-title">7 Best Affiliate Marketing Forums in 2022</h1>
+                                    <p class="article-para">
+                                        For an affiliate marketer, it is crucial to have a connection with other people who do affiliate marketing. There are many ways to contact other affiliate marketers. Social media is one of them. Places such as Linkedin, Instagram, Facebook, and other social media can provide you the opportunity to get in touch with some other affiliate marketers. One place that allows you to get in contact with other people is online forums.
+                                        
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/google_ads_expensive_keywords" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/adsense.png" class="post-cover">
+                                    <h1 class="post-title">Top Paying Adsense Keywords in 2022 — The Most Expensive Keywords in Google Ads</h1>
+                                    <p class="article-para">
+                                        If you want to have a secure source of income in the year 2021, one of the best ways you can make money is from the internet. With all that is going on in our world right now, people now realize that the safest and the best way to spend their time is sitting at their homes and hanging out on the internet. The situation is the same for the people who want to make money. 
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/best_credit_cards_adwords" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/creditcards.jpeg" class="post-cover">
+                                    <h1 class="post-title">10+ Best Credit Cards for Adwords (Google Ads) in 2022</h1>
+                                    <p class="article-para">So you want to advertise your business with Google Ads. You have your credit card ready and there is just one step left to boosting your business. But wait, if your business is big and you are going to be spending a lot, you could use some rewards and cash backs. This is what we are going to talk about in this article. 
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/promote_affiliate_instagram" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/instagramaffiliate.png" class="post-cover">
+                                    <h1 class="post-title">How to Promote Affiliate Products on Instagram</h1>
+                                    <p class="article-para">Affiliate marketing is one of the best ways that you can have a passive income with and the good thing about it is that affiliates have a spread-wide variety of choices on how they want to approach this business. These options go from choosing a niche to choosing a platform to work on.
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/spy_tools_facebook_ads" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/fbspytools.png" class="post-cover">
+                                    <h1 class="post-title">TOP 18 Spy Tools for Facebook Ads in Affiliate Marketing</h1>
+                                    <p class="article-para">
+                                        Facebook is one of the most famous social media that exists, and there are so many people using it for various reasons. There are so many users using Facebook as a platform to make money out of it. There are a lot of advertising campaigns on Facebook, and they are making a good amount of money from advertising. 
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/affiliate_marketing_at_sixteen" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/newbies.png" class="post-cover">
+                                    <h1 class="post-title">Can a 16-year-old Do Affiliate Marketing?</h1>
+                                    <p class="article-para">Everybody wants to be their own boss. You might be 16 years old or even younger, and you do not want to waste your time working at a McDonald's or any other part-time job that does not pay enough and will not add anything to your resume. Maybe you want to work on something that will have an impact on your future or something that will pay better. One option that everyone can consider is doing affiliate marketing.
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/make_white_label_products" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/whitelabel.jpeg" class="post-cover">
+                                    <h1 class="post-title">How to Make a White Label in 2022: a Step by Step Guide</h1>
+                                    <p class="article-para">If you are an affiliate marketer, you have most likely heard of private labeling or white labeling. Private labeling and white labeling are both excellent ways to step up your business. When some people manufacture a product, and someone else sells them, the seller is the one selling a labeled product. With labeling products, you can be your own boss and sell a product with your own brand and design without having to be worried about a manufacturer. 
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/affiliate_marketing_no_blog" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/withoutblog.jpeg" class="post-cover">
+                                    <h1 class="post-title">How to Do Affiliate Marketing Without a Website in 2022 — 10 Ways To Do Affiliate Marketing Without a Blog</h1>
+                                    <p class="article-para">If you are thinking about doing affiliate marketing to promote affiliate products and earn commissions, you have two ways to go about it. The first option is that you can make your own website, which takes a lot of creativity and budget and time. If you do not wish to make your own blog or website, you still have a lot of opportunities to begin your affiliate marketing career.
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/publications/affiliate_voice_search" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/voicesearch.jpeg" class="post-cover">
+                                    <h1 class="post-title">Why You Should Optimize Your Affiliate Website for Voice Search in 2022</h1>
+                                    <p class="article-para">
+                                        Before, you were able to reach the traffic you need through optimizing your website for text queries and searches. Now, things have become much more complicated. A lot of people do not even type anymore. 
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/storytelling_in_marketing" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/storytelling.jpeg" class="post-cover">
+                                    <h1 class="post-title">How Is Storytelling Used in Marketing — 10 Top Storytelling Marketing Examples</h1>
+                                    <p class="article-para">In the marketing business, one of the fundamental steps that you need to take is making a brand for your business. What will make you stand out in your business and what makes you distinguished is your brand. Your customers need a reason to buy from you, and one of the reasons you can give them is throughout your brand. 
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/increase_click_through_rate" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/clickthroughrate.jpeg" class="post-cover">
+                                    <h1 class="post-title">How Do You Increase Click Through Rate on a Website — 10 Ways to Improve Your Organic Click-Through Rate in 2022</h1>
+                                    <p class="article-para">Creating a website is easy. Everyone can get a domain and WordPress and make a website in about 10min, maybe even shorter. Usually, people make a website, and they start struggling immediately. Not investing enough in your website's SEO will leave you without any visitors
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <div class="article-card button purple">
+                            <a href="https://partnerkin.com/en/blog/articles/trackers_for_affiliates" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/tracker.jpeg" class="post-cover">
+                                    <h1 class="post-title">What Tracker to Choose for Affiliate Marketing in 2022: TOP 5 Tools</h1>
+                                    <p class="article-para">Nowadays, everyone uses affiliate marketing to earn commissions by helping businesses attract more traffic and sales. You might have a business or a brand that needs more attention. You ask affiliates to help you achieve your goal. 
+
+                                    </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        
+
+                        
+                            
+                    </div>
+                </div>
+                <div class="field-tile">
+                    <div class="crypto-toggle heading-toggle">
+                        <i class="arrow crypto-arrow"></i>
+                        <h3 class="field-heading">BLOCKCHAIN AND CRYPTOCURRENCY</h3>
+                    </div>
+                    <div class="article-tile crypto-tile">
+
+                        <!-- article card below, copy whole div -->
+                        <!--  -->
+                        <div class="article-card button purple">
+                            <a href="https://cryptozone.com.au/how-to-make-an-nft/" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/nfts.jpg" class="post-cover">
+                                    <h1 class="post-title">How To Make An NFT: All You Need to Know</h1>
+                                    <p class="article-para">So, you are an artist and you want to know how exactly you can make NFTs out of your art and how you can sell them. There are lots of opportunities out there for you to make money out of your art. There is no question why you want to make yourself an NFT, but there might be some complications you are facing as someone who is not entirely into blockchain and cryptocurrency.</p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+
+                        <!--  -->
+                        <div class="article-card button purple">
+                            <a href="https://cryptozone.com.au/how-to-store-ethereum-offline/" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/offlinewallets.jpg" class="post-cover">
+                                    <h1 class="post-title">How to Store Ethereum Offline: Full Ethereum Wallet Guide</h1>
+                                    <p class="article-para">Today’s topic might not seem like something that you need to do, but in this day and age, it is of utmost importance to take care of your assets in the online crypto space. If you need some trustworthy wallets used by millions of people to store Ethereum (ETH), this article will be interesting for you. </p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+
+                        <!--  -->
+                        <div class="article-card button purple">
+                            <a href="https://cryptozone.com.au/best-nft-marketplaces/" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/nftmarketplaces.png" class="post-cover">
+                                    <h1 class="post-title">Best NFT Marketplaces</h1>
+                                    <p class="article-para">There are so many NFT marketplaces out there and they might confuse you or you might not know which one you should choose to sell your artworks on, or which one you should purchase NFTs from. There are certain things to look out for in every NFT art marketplace.</p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="article-card button purple">
+                            <a href="https://cryptozone.com.au/best-bitcoin-wallet-in-australia/" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/bitcoinwallets.jpg" class="post-cover">
+                                    <h1 class="post-title">Best Bitcoin Wallets in Australia in 2022</h1>
+                                    <p class="article-para">Nowadays, cryptocurrency is one of the leading financial fields all over the planet, especially in Australia. People keep their Bitcoin in crypto wallets, and there are just too many of them. Among these wallets, there are so many that are not secure or reputable. It sure is a hard choice to make between these wallets.</p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="article-card button purple">
+                            <a href="https://cryptozone.com.au/best-crypto-exchanges-in-australia/" target="_blank">
+                                <div class="article-content">
+                                    <img src="files/cryptoexchangesau.jpg" class="post-cover">
+                                    <h1 class="post-title">Best Crypto Exchanges in Australia in 2022</h1>
+                                    <p class="article-para">Since the day that cryptocurrency has come to be popular, there have been so many exchange and trading platforms for investors and traders. For someone who wants to get into the crypto space and start investing or trading, especially in Australia, there are lots of options, as well. That is why making a choice might be difficult.</p>
+                                    <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+
+                        
+
+                        
+                            
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="contact">
+                    <h1 class="contact-header">The Only <span class="pink-text">Writing Service</span> You will need</h1>
+                    <div class="button pink open-modal">Get Started Now</div>
+                </div>
+            </section>
+        </main>
+
+
+
+
+        <footer>
+            <div class="footer-effect">
+                <div class="circle cpp"></div>
+            </div>
+            <div class="columns">
+                <div class="col1">
+                    <div class="branding">
+                        <div class="logoface">
+                            <div class="logo-top logotop-footer"></div>
+                            <div class="logo-bottom logobottom-footer"></div>
+                        </div>
+                        <div class="logo-side">
+                            <div class="logotype">
+                                <a href="https://www.practivo.pro"><h1>Practivo</h1></a>
+                            </div>
+                            <div>
+                                <p class="logo-tag">Practice Made Perfect!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-location">
+                            <img src="files/location.svg" class="location-icon">
+                            <p class="location-text">
+                                Melbourne, VIC, Austalia
+                            </p>
+                        </div>
+                        <div class="footer-email">
+                            <img src="files/mail.svg" class="email-icon">
+                            <P class="email-text">
+                                hello@practivo.pro
+                            </P>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col2">
+                    <a href="about" class="footer-item">About</a>
+                    <!-- <a href="blog" class="footer-item">Blog</a> -->
+                    <a href="portfolio" class="footer-item">Portfolio</a>
+                    <a class="footer-item open-modal contact-us">Contact us</a>
+                </div>
+                <div class="col3">
+                    <div class="social">
+                        <a href="https://twitter.com/Practivopro" target="_blank" class="button purple social-button"><img src="files/twitter.svg" class="social-img"></a>
+                        <a href="https://www.instagram.com/practivopro/" target="_blank" class="button purple social-button"><img src="files/instagram.svg" class="social-img"></a>
+                        <a href="https://www.linkedin.com/company/practivo/" target="_blank" class="button purple social-button"><img src="files/linkedin.svg" class="social-img"></a>
+                        <!-- <a href="" target="_blank" class="button purple social-button"><img src="files/upwork.svg" class="social-img"></a> -->
+                    </div>
+                    <div class="rights">
+                        <p class="rights">Practivo 2022 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "secureteam@ssl-mail.com",
+                Password : "a130e6a3-fa87-4eb7-9c17-707823b575b4",
+                To : 'practivopro@gmail.com',
+                From : 'practivopro@gmail.com',
+                Subject : "New Project Enquiry!",
+                Body : "Email: " + document.getElementById("email").value + "<br> Project Type: " + document.querySelector('input[name="project-type"]:checked').value + "<br> Delivery Time: " + document.querySelector('input[name="project-time"]:checked').value + "<br> Service: " + document.querySelector('input[name="project"]:checked').value + "<br> Theme: " + document.querySelector('input[name="project-theme"]:checked').value + "<br> Amount: " + document.getElementById('input').value + "<br> Total Price: " + document.getElementById('output').innerHTML,
+                }).then(
+                document.getElementById('alert').innerHTML = "Your message has been sent! We will get in touch with you in 24 hours to learn more about your project.",
+                document.querySelector('.contact-part3').classList.add('active'),
+                );
+            }
+            
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+
+            function int(value) {
+                return parseInt(value);
+            }
+
+            function checkValue(sender) {
+                if (document.getElementById('content').checked) {
+                    let value = parseInt(sender.value);
+                    if (document.getElementById('long-term').checked) {
+                        let min = 10000;
+                        let max = 1000000;
+                        if (value<min) {
+                        sender.value = min;
+                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 10,000 words. For fewer words, select Short-term.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                        if (value>max) {
+                        sender.value = max;
+                        document.getElementById('alert2').innerHTML = "For more than 1,000,000 words, please contact us via email.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                    else {
+                        let max = 10000;
+                        if (value>max) {
+                            sender.value = max;
+                            document.getElementById('alert2').innerHTML = "For amounts more than 10,000 words, please contact us via email or select Long-term.",
+                            document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                }
+
+                if (document.getElementById('proofreading').checked) {
+                    let value = parseInt(sender.value);
+                    if (document.getElementById('long-term').checked) {
+                        let min = 50;
+                        let max = 5000;
+                        if (value<min) {
+                        sender.value = min;
+                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 50 pages. For fewer pages, select Short-term.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                        if (value>max) {
+                        sender.value = max;
+                        document.getElementById('alert2').innerHTML = "For more than 5,000 pages, please contact us via email.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                    else {
+                        let max = 50;
+                        if (value>max) {
+                            sender.value = max;
+                            document.getElementById('alert2').innerHTML = "For amounts more than 50 pages, please contact us via email or select Long-term.",
+                            document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                }
+
+                if (document.getElementById('pitch').checked) {
+                    let value = parseInt(sender.value);
+                    if (document.getElementById('long-term').checked) {
+                        let min = 25;
+                        let max = 2000;
+                        if (value<min) {
+                        sender.value = min;
+                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 25 slides. For fewer slides, select Short-term.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                        if (value>max) {
+                        sender.value = max;
+                        document.getElementById('alert2').innerHTML = "For more than 2,000 slides, please contact us via email.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                    else {
+                        let max = 25;
+                        if (value>max) {
+                            sender.value = max;
+                            document.getElementById('alert2').innerHTML = "For amounts more than 25 slides, please contact us via email or select Long-term.",
+                            document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                }
+
+                if (document.getElementById('ux').checked) {
+                    let value = parseInt(sender.value);
+                    if (document.getElementById('long-term').checked) {
+                        let min = 100;
+                        let max = 10000;
+                        if (value<min) {
+                        sender.value = min;
+                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 100 screens. For fewer screens, select Short-term.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                        if (value>max) {
+                        sender.value = max;
+                        document.getElementById('alert2').innerHTML = "For more than 10,000 screens, please contact us via email.",
+                        document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                    else {
+                        let max = 100;
+                        if (value>max) {
+                            sender.value = max;
+                            document.getElementById('alert2').innerHTML = "For amounts more than 100 screens, please contact us via email or select Long-term.",
+                            document.querySelector('.contact-part4').classList.add('active');
+                        }
+                    }
+                }
+
+            }
+
+            function changePopUp() {
+                if (document.getElementById('short-term').checked) {
+                    document.querySelector('.contact-part4').classList.remove('active');
+                }
+
+                if (document.getElementById('long-term').checked) {
+                    document.querySelector('.contact-part4').classList.remove('active');
+                }
+            }
+
+            function setValue() {
+                if (document.getElementById('content').checked) {
+                    if (document.getElementById('short-term').checked) {
+                        document.getElementById('input').value = 1000;
+                        return calculateTotal();
+                    }
+                    else if (document.getElementById('long-term').checked) {
+                        document.getElementById('input').value = 10000;
+                        return calculateTotalLong();
+                    }
+                }
+
+                if (document.getElementById('proofreading').checked) {
+                    if (document.getElementById('short-term').checked) {
+                        document.getElementById('input').value = 1;
+                        return calculateTotal();
+                    }
+                    else if (document.getElementById('long-term').checked) {
+                        document.getElementById('input').value = 50;
+                        return calculateTotalLong();
+                    }
+                }
+
+                if (document.getElementById('pitch').checked) {
+                    if (document.getElementById('short-term').checked) {
+                        document.getElementById('input').value = 15;
+                        return calculateTotal();
+                    }
+                    else if (document.getElementById('long-term').checked) {
+                        document.getElementById('input').value = 25;
+                        return calculateTotalLong();
+                    }
+                }
+
+                if (document.getElementById('ux').checked) {
+                    if (document.getElementById('short-term').checked) {
+                        document.getElementById('input').value = 1;
+                        return calculateTotal();
+                    }
+                    else if (document.getElementById('long-term').checked) {
+                        document.getElementById('input').value = 100;
+                        return calculateTotalLong();
+                    }
+                }
+
+
+            }
+
+
+
+            $(document).on('keyup', '.input', function() {
+                var x = $(this).val();
+                $(this).val(x.toString().replace(/,/g, ""));
+            });
+
+            var project_type = new Array();
+            project_type["short-term"]=1;
+            project_type["long-term"]=0.85;
+
+            var project_time = new Array();
+            project_time["one-day"]=1.5;
+            project_time["one-week"]=1.2;
+            project_time["two-weeks"]=1;
+            project_time["na"]=1;
+
+            var project_name = new Array();
+            project_name["content"]=0.03;
+            project_name["proofreading"]=10;
+            project_name["pitch"]=25;
+            project_name["ux"]=15;
+
+            var project_theme = new Array();
+            project_theme["general"]=1;
+            project_theme["formal"]=1.25;
+            project_theme["tech"]=1.5;
+            project_theme["other"]=1.2;
+
+            function getProjectType() {
+                var typeRadio = document.getElementsByName('project-type');
+
+                for (i=0; i < typeRadio.length; i++) {
+                    if (typeRadio[i].checked) {
+                        user_input = typeRadio[i].value;
+                    }
+                }
+                return project_type[user_input];
+            }
+
+            function getProjectTime() {
+                var typeRadio = document.getElementsByName('project-time');
+                var typeLabel = document.querySelector('.choice');
+
+                for (i=0; i < typeRadio.length; i++) {
+                    if (typeRadio[i].checked) {
+                        user_input = typeRadio[i].value;
+                    }
+                }
+                return project_time[user_input];
+            }
+
+            function getProjectName() {
+                var typeRadio = document.getElementsByName('project');
+
+                for (i=0; i < typeRadio.length; i++) {
+                    if (typeRadio[i].checked) {
+                        user_input = typeRadio[i].value;
+                    }
+                }
+                return project_name[user_input];
+            }
+
+            function getProjectTheme() {
+                var typeRadio = document.getElementsByName('project-theme');
+
+                for (i=0; i < typeRadio.length; i++) {
+                    if (typeRadio[i].checked) {
+                        user_input = typeRadio[i].value;
+                    }
+                }
+                return project_theme[user_input];
+            }
+
+
+            function RestrictFirstZero(e) {
+                if (e.srcElement.value.length == 0 && e.which == 48) {
+                    e.preventDefault();
+                    return false;
+                }
+            };
+ 
+            function PreventFirstZero(event) {
+                if (event.srcElement.value.charAt(0) == '0') {
+                    event.srcElement.value = event.srcElement.value.slice(1);
+                }
+            };
+
+            function calculateTotal() {
+                var input = document.getElementById('input').value;
+
+                input = input || 0
+
+                var total = getProjectType() * getProjectTime() * getProjectName() * getProjectTheme() * parseInt(input);
+                
+                document.getElementById('output').innerHTML = "$ " + total;
+
+                if (document.getElementById('long-term').checked) {
+                    return calculateTotalLong();
+                }
+            };
+
+            function calculateTotalLong() {
+                var input = document.getElementById('input').value;
+
+                input = input || 0
+
+                var totalLong = getProjectType() * getProjectName() * getProjectTheme() * parseInt(input);
+                
+                document.getElementById('output').innerHTML = "$ " + totalLong;
+
+                if (document.getElementById('short-term').checked) {
+                    return calculateTotal();
+                }
+            };
+
+            window.onload = document.getElementById('short-term').click();
+            window.onload = document.getElementById('one-week').click();
+            window.onload = document.getElementById('content').click();
+            window.onload = document.getElementById('general').click();
+
+            
+        </script>
+        <script src="script.js">
+            
+        </script>
+        
+        <script>
+            document.cookie = 'cookie1=value1; SameSite=Lax';
+            document.cookie = 'cookie2=value2; SameSite=None; Secure';
+        </script>
+        <script>
+                $(document).on('ready', function() {
+                $('.slider').slick({
+                    dots: true,
+                    centerMode: true,
+                    centerPadding: '17%',
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    slidesToShow: 1,
+                    slidesToScroll: 4,
+                });
+                $('.slider').on('afterChange', function(event, slick, currentSlide) {
+                    if (currentSlide == 0) {
+                    
+                    }
+                    if (currentSlide == 1) {
+
+                    }
+                    if (currentSlide == 2) {
+                    
+                    }
+                    if (currentSlide == 3) {
+                    
+                    }
+                });
+                });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        
+        <script>
+            var mouseDown = 0;
+            document.body.onmousedown = function() { 
+            ++mouseDown;
+            }
+            document.body.onmouseup = function() {
+            --mouseDown;
+            }
+
+            $(".open-modal").click(function(e){
+                e.preventDefault();
+                $(".modal").fadeIn(300,function(){$(this).focus();});
+            });
+
+            $('.close-modal').click(function() {
+            $(".modal").fadeOut(300);
+            });
+
+            $(".modal").on('click',function(){
+                    $(".modal").fadeOut(100);
+            });
+
+            $(".modal-content").on('click', (e)=>{
+                e.stopPropagation()
+            })
+        </script>
+        <script>
+            var btn = $('#button');
+
+            $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+            });
+
+            btn.on('click', function(e) {
+                e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+
+            });
+        </script>
+        <script>
+            const mToggle = document.querySelector(".marketing-toggle");
+            const cToggle = document.querySelector(".crypto-toggle");
+            const mIcon = document.querySelector(".marketing-arrow");
+            const cIcon = document.querySelector(".crypto-arrow");
+            const cTile = document.querySelector(".crypto-tile");
+            const mTile = document.querySelector(".marketing-tile");
+            mToggle.addEventListener('click', () => {
+                mIcon.classList.toggle('right');
+                mTile.classList.toggle('hide');
+            });
+
+
+            cToggle.addEventListener('click', () => {
+                cIcon.classList.toggle('right');
+                cTile.classList.toggle('hide');
+            });
+        </script>
+    </body>
+</html>

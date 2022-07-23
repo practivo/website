@@ -17,7 +17,17 @@
 				
     </head>
     <body>
+        <a id="button"></a>
+        
         <header>
+            
+            <!-- <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="switch round"></div>
+                </label>
+                <p style="font-size: 12px; margin-top: 15px; margin-bottom: 0;">Light Switch</p>
+            </div> -->
             <nav>
                 <div class="logo">
                     <div class="logoface">
@@ -31,7 +41,8 @@
                 
                 <div class="menu">
                     <a href="about" class="menu-item">About</a>
-                    <a href="blog" class="menu-item">Blog</a>
+                    <!-- <a href="blog" class="menu-item">Blog</a> -->
+                    <a href="portfolio" class="menu-item">Portfolio</a>
                     <a class="button purple open-modal" id="open-modal">Contact us</a>
                 </div>
                 <div class="menu-fixed">
@@ -39,9 +50,13 @@
                         <img src="files/about.svg" class="menu-icon-img"/>
                         <a href="about" class="menu-item-fixed">About</a>
                     </div>
-                    <div class="item-order">
+                    <!-- <div class="item-order">
                         <img src="files/blog.svg" class="menu-icon-img">
                         <a href="blog" class="menu-item-fixed">Blog</a>
+                    </div> -->
+                    <div class="item-order">
+                        <img src="files/blog.svg" class="menu-icon-img">
+                        <a href="portfolio" class="menu-item-fixed">Portfolio</a>
                     </div>
                     <div class="item-order open-modal">
                         <img src="files/contact.svg" class="menu-icon-img"/>
@@ -60,7 +75,7 @@
                                 <div class="email-copy link-con">
                                     <p class="link link-text">hello@practivo.pro</p>
                                     <div class="alert3">
-                                        <h3>Copied!</h3>
+                                        <p class="alert-copied">Copied!</p>
                                     </div>
                                     <img class="copy-icon" src="files/copy.svg">
                                 </div>
@@ -133,7 +148,7 @@
                                 <div class="card-box">
                                     <p class="card-service-line">Our superpower is writing content for blogs, journals, and social media.
                                         Don’t take our word for it, though. Drop us a topic and get your first article in less than a day.</p>
-                                    <a href="#" class="card-service-img"><img class="card-img" src="files/content.svg"/></a>
+                                    <a class="card-service-img"><img class="card-img" src="files/content.svg"/></a>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +158,7 @@
                                 <div class="card-box">
                                     <p class="card-service-line">Grammarly is good, but nothing can beat humans in detecting grammar mistakes!
                                         We will make your text natural AND flawless.</p>
-                                    <a href="#" class="card-service-img"><img class="card-img" src="files/proofreading.svg"/></a>
+                                    <a class="card-service-img"><img class="card-img" src="files/proofreading.svg"/></a>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +168,7 @@
                                 <div class="card-box">
                                     <p class="card-service-line">Writing a pitch deck for your business can be tricky, but we know the tricks!
                                         We will conduct the necessary research, write the content, and prepare the slides in less than a week.</p>
-                                    <a href="#" class="card-service-img"><img class="card-img" src="files/pitch.svg"/></a>
+                                    <a class="card-service-img"><img class="card-img" src="files/pitch.svg"/></a>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +178,7 @@
                                 <div class="card-box">
                                     <p class="card-service-line">You’ve got a website/app but you don’t know what to write on it. Well, we do!
                                         Take your product copy from stale to stunning real quick.</p>
-                                    <a href="#" class="card-service-img"><img class="card-img" src="files/ux.svg"/></a>
+                                    <a class="card-service-img"><img class="card-img" src="files/ux.svg"/></a>
                                 </div>
                             </div>
                         </section>
@@ -179,22 +194,22 @@
                         <div class="box content-box x">
                             <p class="service-line">Our superpower is writing content for blogs, journals, and social media.
                                 <br>Don’t take our word for it, though. Drop us a topic and get your first article in less than a day.</p>
-                            <a href="#" class="service-img"><img src="files/content.svg"/></a>
+                            <a class="service-img"><img src="files/content.svg"/></a>
                         </div>
                         <div class="box proof-box">
                             <p class="service-line">Grammarly is good, but nothing can beat humans in detecting grammar mistakes!
                                 <br>We will make your text natural AND flawless.</p>
-                            <a href="#" class="service-img"><img src="files/proofreading.svg"/></a>
+                            <a class="service-img"><img src="files/proofreading.svg"/></a>
                         </div>
                         <div class="box pitch-box">
                             <p class="service-line">Writing a pitch deck for your business can be tricky, but we know the tricks!
                                 <br>We will conduct the necessary research, write the content, and prepare the slides in less than a week.</p>
-                            <a href="#" class="service-img"><img src="files/pitch.svg"/></a>
+                            <a class="service-img"><img src="files/pitch.svg"/></a>
                         </div>
                         <div class="box ux-box">
                             <p class="service-line">You’ve got a website/app but you don’t know what to write on it. Well, we do!
                                 <br>Take your product copy from stale to stunning real quick.</p>
-                            <a href="#" class="service-img"><img src="files/ux.svg"/></a>
+                            <a class="service-img"><img src="files/ux.svg"/></a>
                         </div>
                     </div>
                     <div class="services-backdrop"></div>
@@ -329,20 +344,22 @@
                 <div>
                     <section class="article-list-landing">
                         <div class="article-top">
-                                <h1 class="article-top-header">POSTS FROM THE BLOG</h1>
-                                <a class="blog-link" href="blog" style="font-size: 16px;">Visit the Blog 🠒</a>
+                                <h1 class="article-top-header">TOP ARTICLES FROM OUR TEAM PORTFOLIO</h1>
+                                <a class="blog-link" target="_blank" href="portfolio" style="font-size: 16px;">Visit our Portfolio 🠒</a>
                         </div>
                         <div class="article-tile-landing">
         
                             <!-- article card below, copy whole div -->
                             <!--  -->
                             <div class="article-card button purple">
-                                <a href="sample-article">
+                                
+                                <a href="https://partnerkin.com/en/blog/articles/google_removing_cookies_aff" target="_blank">
                                     <div class="article-content">
-                                        <img src="files/cover.png" class="post-cover">
-                                        <h1 class="post-title">What an amazing article</h1>
-                                        <p class="article-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra est eget euismod condimentum. Sed ipsum est, tristique nec mauris sit amet, mattis egestas magna. Integer condimentum orci eu augue gravida commodo. Aenean venenatis ornare sem ac rhoncus. In accumsan dignissim rutrum.</p>
-                                        <p class="post-para-cta">🠒 Continue Reading</p>
+                                        <img src="files/cookies.png" class="post-cover">
+                                        <h1 class="post-title">Ways to Continue Affiliate Marketing After the Removal of Cookies from Google Chrome</h1>
+                                        <div class="ftag marketing">Marketing</div>
+                                        <p class="article-para">In case you are not aware, there has been a change in Google Chrome's system, and they are planning to get rid of the third-party cookies and to have only first-party cookies. This whole action will have an impact on user experience and affiliate marketing.</p>
+                                        <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
                                     </div>
                                 </a>
                             </div>
@@ -350,12 +367,15 @@
                             
                             <!--  -->
                             <div class="article-card button purple">
-                                <a href="sample-article">
+                                <a href="https://partnerkin.com/en/blog/articles/improve_your_conversion_rates" target="_blank">
                                     <div class="article-content">
-                                        <img src="files/cover.png" class="post-cover">
-                                        <h1 class="post-title">What an amazing article</h1>
-                                        <p class="article-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra est eget euismod condimentum. Sed ipsum est, tristique nec mauris sit amet, mattis egestas magna. Integer condimentum orci eu augue gravida commodo. Aenean venenatis ornare sem ac rhoncus. In accumsan dignissim rutrum.</p>
-                                        <p class="post-para-cta">🠒 Continue Reading</p>
+                                        <img src="files/conversion.jpeg" class="post-cover">
+                                        <h1 class="post-title">How to Improve Your Conversion Rates with a Pre-Landing in 2022 — 7 Fast and Easy Ways</h1>
+                                        <div class="ftag marketing">Marketing</div>
+                                        <p class="article-para">Making a pre-landing page in a way that increases your conversion rate, and your overall sale, is easy and you can do it without any problem. All you have to do is make sure you follow a few solid steps, discussed in this article.
+
+                                        </p>
+                                        <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
                                     </div>
                                 </a>
                             </div>
@@ -363,12 +383,13 @@
 
                             <!--  -->
                             <div class="article-card button purple">
-                                <a href="sample-article">
+                                <a href="https://cryptozone.com.au/how-to-make-an-nft/" target="_blank">
                                     <div class="article-content">
-                                        <img src="files/cover.png" class="post-cover">
-                                        <h1 class="post-title">What an amazing article</h1>
-                                        <p class="article-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra est eget euismod condimentum. Sed ipsum est, tristique nec mauris sit amet, mattis egestas magna. Integer condimentum orci eu augue gravida commodo. Aenean venenatis ornare sem ac rhoncus. In accumsan dignissim rutrum.</p>
-                                        <p class="post-para-cta">🠒 Continue Reading</p>
+                                        <img src="files/nfts.jpg" class="post-cover">
+                                        <h1 class="post-title">How To Make An NFT: All You Need to Know</h1>
+                                        <div class="ftag blockchain">Blockchain and Cryptocurrency</div>
+                                        <p class="article-para">So, you are an artist and you want to know how exactly you can make NFTs out of your art and how you can sell them. There are lots of opportunities out there for you to make money out of your art. There is no question why you want to make yourself an NFT, but there might be some complications you are facing as someone who is not entirely into blockchain and cryptocurrency.</p>
+                                        <p class="post-para-cta">🠒 Continue Reading on Client Website</p>
                                     </div>
                                 </a>
                             </div>
@@ -400,7 +421,7 @@
                         </div>
                         <div class="logo-side">
                             <div class="logotype">
-                                <a href="https://www.practivo.pro"><h1>Practivo</h1></a>
+                                <a href="https://www.practivo.pro"><h1 class="footer-logo">Practivo</h1></a>
                             </div>
                             <div>
                                 <p class="logo-tag">Practice Made Perfect!</p>
@@ -425,15 +446,16 @@
                 </div>
                 <div class="col2">
                     <a href="about" class="footer-item">About</a>
-                    <a href="blog" class="footer-item">Blog</a>
-                    <a class="footer-item open-modal">Contact us</a>
+                    <!-- <a href="blog" class="footer-item">Blog</a> -->
+                    <a href="portfolio" class="footer-item">Portfolio</a>
+                    <a class="footer-item open-modal contact-us">Contact us</a>
                 </div>
                 <div class="col3">
                     <div class="social">
-                        <div class="button purple social-button"><img src="files/twitter.svg" class="social-img"></div>
-                        <div class="button purple social-button"><img src="files/instagram.svg" class="social-img"></div>
-                        <div class="button purple social-button"><img src="files/linkedin.svg" class="social-img"></div>
-                        <div class="button purple social-button"><img src="files/upwork.svg" class="social-img"></div>
+                        <a href="https://twitter.com/Practivopro" target="_blank" class="button purple social-button"><img src="files/twitter.svg" class="social-img"></a>
+                        <a href="https://www.instagram.com/practivopro/" target="_blank" class="button purple social-button"><img src="files/instagram.svg" class="social-img"></a>
+                        <a href="https://www.linkedin.com/company/practivo/" target="_blank" class="button purple social-button"><img src="files/linkedin.svg" class="social-img"></a>
+                        <!-- <a href="" target="_blank" class="button purple social-button"><img src="files/upwork.svg" class="social-img"></a> -->
                     </div>
                     <div class="rights">
                         <p class="rights">Practivo 2022 All Rights Reserved.</p>
@@ -820,6 +842,35 @@
                 e.stopPropagation()
             })
         </script>
-        
+        <script>
+            var btn = $('#button');
+
+            $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+            });
+
+            btn.on('click', function(e) {
+                e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+
+            });
+        </script>
+
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/62d688817b967b11799a42df/1g8b0ael6';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+            </script>
+
     </body>
 </html>

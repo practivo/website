@@ -38,6 +38,7 @@ const openModalBtn = document.querySelector(".open-modal");
 const closeModalBtn = document.querySelector("#close-modal");
 const linkCon = document.querySelector(".link-con");
 
+
 closeModalBtn.addEventListener("click", closeModal);
 openModalBtn.addEventListener("click", openModal);
 
@@ -187,4 +188,42 @@ shortTerm.addEventListener('click', () => {
 closeButton2.addEventListener('click', () => {
     contactCont2.classList.remove('active');
 }); 
+
+
+
+
+
+
+
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'light') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+
+
+
+
+
+
 
