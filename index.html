@@ -102,16 +102,16 @@
                         <div class="modal-row">
                             <h3>Social Media</h3>
                             <div class="social-row row">
-                                <a href="#" target="_blank" class="linkedin-button contact-button">
+                                <a href="https://www.linkedin.com/company/practivo/" target="_blank" class="linkedin-button contact-button">
                                     <img src="files/linkedin.svg">
                                 </a>
-                                <a href="#" target="_blank" class="instagram-button contact-button">
+                                <a href="https://www.instagram.com/practivopro/" target="_blank" class="instagram-button contact-button">
                                     <img src="files/instagram.svg">
                                 </a>
-                                <a href="#" target="_blank" class="twitter-button contact-button">
+                                <a href="https://twitter.com/Practivopro" target="_blank" class="twitter-button contact-button">
                                     <img src="files/twitter.svg">
                                 </a>
-                                <a href="#" target="_blank" class="upwork-button contact-button">
+                                <a href="https://www.upwork.com/agencies/~0171f77e9a972de9a7/" target="_blank" class="upwork-button contact-button">
                                     <img src="files/upwork.svg">
                                 </a>
                             </div>
@@ -245,6 +245,28 @@
                         <div class="options">
                             <div class="type">
                                 <p class="question">
+                                    Choose Service
+                                </p>
+                                <div class="choices" id="project">
+                                    <label class="choice third active contentwriting"><input class="choice-input" name="project" type="radio" value="content" id="content" onclick="calculateTotal(); setValue();"/>Content Writing</label>
+                                    <label class="choice third proofreading"><input class="choice-input" name="project" type="radio" value="proofreading" id="proofreading" onclick="calculateTotal(); setValue();"/>Proofreading</label>
+                                    <label class="choice third pitchdeck"><input class="choice-input" name="project" type="radio" value="pitch" id="pitch" onclick="calculateTotal(); setValue();"/>Pitch Deck</label>
+                                    <label class="choice third ux"><input class="choice-input" name="project" type="radio" value="ux" id="ux" onclick="calculateTotal(); setValue();"/>UX Writing</label>
+                                </div>
+                            </div>
+                            <div class="type">
+                                <p class="question">
+                                    Choose Theme
+                                </p>
+                                <div class="choices" id="theme">
+                                    <input class="choice-input" name="project-theme" type="radio" value="general" id="general" onclick="calculateTotal();"><label for="general" class="choice fourth active">General</label>
+                                    <input class="choice-input" name="project-theme" type="radio" value="formal" id="formal" onclick="calculateTotal();"><label for="formal" class="choice fourth">Formal</label>
+                                    <input class="choice-input" name="project-theme" type="radio" value="tech" id="tech" onclick="calculateTotal();"><label for="tech" class="choice fourth">Technical</label>
+                                    <input class="choice-input" name="project-theme" type="radio" value="other" id="other" onclick="calculateTotal();"><label for="other" class="choice fourth">Other</label>
+                                </div>
+                            </div>
+                            <div class="type">
+                                <p class="question">
                                     Project Type
                                 </p>
                                 <div class="choices" id="type">
@@ -263,28 +285,7 @@
                                     <label class="choice na second"><input class="choice-input project-time" name="project-time" type="radio" value="na" id="na" onclick="calculateTotal();"/>Doesn't matter</label>
                                 </div>
                             </div>
-                            <div class="type">
-                                <p class="question">
-                                    Choose Service
-                                </p>
-                                <div class="choices" id="project">
-                                    <label class="choice third active contentwriting"><input class="choice-input" name="project" type="radio" value="content" id="content" onclick="calculateTotal(); setValue();"/>Content Writing</label>
-                                    <label class="choice third proofreading"><input class="choice-input" name="project" type="radio" value="proofreading" id="proofreading" onclick="calculateTotal(); setValue();"/>Proofreading</label>
-                                    <label class="choice third pitchdeck"><input class="choice-input" name="project" type="radio" value="pitch" id="pitch" onclick="calculateTotal(); setValue();"/>Pitch Deck</label>
-                                    <label class="choice third ux"><input class="choice-input" name="project" type="radio" value="ux" id="ux" onclick="calculateTotal(); setValue();"/>UX Writing</label>
-                                </div>
-                            </div>
-                            <div class="type">
-                                <p class="question">
-                                    Choose Theme
-                                </p>
-                                <div class="choices" id="theme">
-                                    <input class="choice-input" name="project-theme" type="radio" value="general" id="general" onclick="calculateTotal();"><label for="general" class="choice fourth active">General</label>
-                                    <input class="choice-input" name="project-theme" type="radio" value="formal" id="formal" onclick="calculateTotal();"><label for="formal" class="choice fourth">Formal Correspondence</label>
-                                    <input class="choice-input" name="project-theme" type="radio" value="tech" id="tech" onclick="calculateTotal();"><label for="tech" class="choice fourth">Technical</label>
-                                    <input class="choice-input" name="project-theme" type="radio" value="other" id="other" onclick="calculateTotal();"><label for="other" class="choice fourth">Other</label>
-                                </div>
-                            </div>
+
                             <div class="type">
                                 <p class="question" id="amount">
                                     Enter Volume
@@ -455,7 +456,7 @@
                         <a href="https://twitter.com/Practivopro" target="_blank" class="button purple social-button"><img src="files/twitter.svg" class="social-img"></a>
                         <a href="https://www.instagram.com/practivopro/" target="_blank" class="button purple social-button"><img src="files/instagram.svg" class="social-img"></a>
                         <a href="https://www.linkedin.com/company/practivo/" target="_blank" class="button purple social-button"><img src="files/linkedin.svg" class="social-img"></a>
-                        <!-- <a href="" target="_blank" class="button purple social-button"><img src="files/upwork.svg" class="social-img"></a> -->
+                        <a href="https://www.upwork.com/agencies/~0171f77e9a972de9a7/" target="_blank" class="button purple social-button"><img src="files/upwork.svg" class="social-img"></a>
                     </div>
                     <div class="rights">
                         <p class="rights">Practivo 2022 All Rights Reserved.</p>
@@ -495,23 +496,26 @@
                     let value = parseInt(sender.value);
                     if (document.getElementById('long-term').checked) {
                         let min = 10000;
-                        let max = 1000000;
+                        let max = 10000000;
                         if (value<min) {
-                        sender.value = min;
-                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 10,000 words. For fewer words, select Short-term.",
-                        document.querySelector('.contact-part4').classList.add('active');
+                        sender.value = value;
+                        // document.getElementById('short-term').click();
+                        // document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 10,000 words. For fewer words, select Short-term.",
+                        // document.querySelector('.contact-part4').classList.add('active');
                         }
                         if (value>max) {
                         sender.value = max;
-                        document.getElementById('alert2').innerHTML = "For more than 1,000,000 words, please contact us via email.",
-                        document.querySelector('.contact-part4').classList.add('active');
+                        // document.getElementById('alert2').innerHTML = "For more than 1,000,000 words, please contact us via email.",
+                        // document.querySelector('.contact-part4').classList.add('active');
                         }
+
                     }
                     else {
                         let max = 10000;
                         if (value>max) {
-                            sender.value = max;
-                            document.getElementById('alert2').innerHTML = "For amounts more than 10,000 words, please contact us via email or select Long-term.",
+                            sender.value = value;
+                            document.getElementById('long-term').click();
+                            document.getElementById('alert2').innerHTML = "Projects that involve more than 10,000 words can only be Long-term.",
                             document.querySelector('.contact-part4').classList.add('active');
                         }
                     }
@@ -521,23 +525,25 @@
                     let value = parseInt(sender.value);
                     if (document.getElementById('long-term').checked) {
                         let min = 50;
-                        let max = 5000;
+                        let max = 10000000;
                         if (value<min) {
-                        sender.value = min;
-                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 50 pages. For fewer pages, select Short-term.",
-                        document.querySelector('.contact-part4').classList.add('active');
+                        sender.value = value;
+                        // document.getElementById('short-term').click();
+                        // document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 50 pages. For fewer pages, select Short-term.",
+                        // document.querySelector('.contact-part4').classList.add('active');
                         }
                         if (value>max) {
                         sender.value = max;
-                        document.getElementById('alert2').innerHTML = "For more than 5,000 pages, please contact us via email.",
-                        document.querySelector('.contact-part4').classList.add('active');
+                        // document.getElementById('alert2').innerHTML = "For more than 5,000 pages, please contact us via email.",
+                        // document.querySelector('.contact-part4').classList.add('active');
                         }
                     }
                     else {
                         let max = 50;
                         if (value>max) {
-                            sender.value = max;
-                            document.getElementById('alert2').innerHTML = "For amounts more than 50 pages, please contact us via email or select Long-term.",
+                            sender.value = value;
+                            document.getElementById('long-term').click();
+                            document.getElementById('alert2').innerHTML = "Projects that involve more than 50 pages can only be Long-term.",
                             document.querySelector('.contact-part4').classList.add('active');
                         }
                     }
@@ -547,23 +553,25 @@
                     let value = parseInt(sender.value);
                     if (document.getElementById('long-term').checked) {
                         let min = 25;
-                        let max = 2000;
+                        let max = 10000000;
                         if (value<min) {
-                        sender.value = min;
-                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 25 slides. For fewer slides, select Short-term.",
-                        document.querySelector('.contact-part4').classList.add('active');
+                        sender.value = value;
+                        // document.getElementById('short-term').click();
+                        // document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 25 slides. For fewer slides, select Short-term.",
+                        // document.querySelector('.contact-part4').classList.add('active');
                         }
                         if (value>max) {
                         sender.value = max;
-                        document.getElementById('alert2').innerHTML = "For more than 2,000 slides, please contact us via email.",
-                        document.querySelector('.contact-part4').classList.add('active');
+                        // document.getElementById('alert2').innerHTML = "For more than 2,000 slides, please contact us via email.",
+                        // document.querySelector('.contact-part4').classList.add('active');
                         }
                     }
                     else {
                         let max = 25;
                         if (value>max) {
-                            sender.value = max;
-                            document.getElementById('alert2').innerHTML = "For amounts more than 25 slides, please contact us via email or select Long-term.",
+                            sender.value = value;
+                            document.getElementById('long-term').click();
+                            document.getElementById('alert2').innerHTML = "Projects that involve more than 25 slides can only be Long-term.",
                             document.querySelector('.contact-part4').classList.add('active');
                         }
                     }
@@ -573,23 +581,25 @@
                     let value = parseInt(sender.value);
                     if (document.getElementById('long-term').checked) {
                         let min = 100;
-                        let max = 10000;
+                        let max = 10000000;
                         if (value<min) {
-                        sender.value = min;
-                        document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 100 screens. For fewer screens, select Short-term.",
-                        document.querySelector('.contact-part4').classList.add('active');
+                        sender.value = value;
+                        // document.getElementById('short-term').click();
+                        // document.getElementById('alert2').innerHTML = "Long-term projects can't have less than 100 screens. For fewer screens, select Short-term.",
+                        // document.querySelector('.contact-part4').classList.add('active');
                         }
                         if (value>max) {
                         sender.value = max;
-                        document.getElementById('alert2').innerHTML = "For more than 10,000 screens, please contact us via email.",
-                        document.querySelector('.contact-part4').classList.add('active');
+                        // document.getElementById('alert2').innerHTML = "For more than 10,000 screens, please contact us via email.",
+                        // document.querySelector('.contact-part4').classList.add('active');
                         }
                     }
                     else {
                         let max = 100;
                         if (value>max) {
-                            sender.value = max;
-                            document.getElementById('alert2').innerHTML = "For amounts more than 100 screens, please contact us via email or select Long-term.",
+                            sender.value = value;
+                            document.getElementById('long-term').click();
+                            document.getElementById('alert2').innerHTML = "Projects that involve more than 100 screens can only be Long-term.",
                             document.querySelector('.contact-part4').classList.add('active');
                         }
                     }
@@ -614,7 +624,7 @@
                         return calculateTotal();
                     }
                     else if (document.getElementById('long-term').checked) {
-                        document.getElementById('input').value = 10000;
+                        document.getElementById('input').value = value;
                         return calculateTotalLong();
                     }
                 }
@@ -625,7 +635,7 @@
                         return calculateTotal();
                     }
                     else if (document.getElementById('long-term').checked) {
-                        document.getElementById('input').value = 50;
+                        document.getElementById('input').value = value;
                         return calculateTotalLong();
                     }
                 }
@@ -636,7 +646,7 @@
                         return calculateTotal();
                     }
                     else if (document.getElementById('long-term').checked) {
-                        document.getElementById('input').value = 25;
+                        document.getElementById('input').value = value;
                         return calculateTotalLong();
                     }
                 }
@@ -647,7 +657,7 @@
                         return calculateTotal();
                     }
                     else if (document.getElementById('long-term').checked) {
-                        document.getElementById('input').value = 100;
+                        document.getElementById('input').value = value;
                         return calculateTotalLong();
                     }
                 }
@@ -663,26 +673,26 @@
             });
 
             var project_type = new Array();
-            project_type["short-term"]=1;
-            project_type["long-term"]=0.85;
+            project_type["short-term"]=100;
+            project_type["long-term"]=9000;
 
             var project_time = new Array();
-            project_time["one-day"]=1.5;
-            project_time["one-week"]=1.2;
-            project_time["two-weeks"]=1;
-            project_time["na"]=1;
+            project_time["one-day"]=150;
+            project_time["one-week"]=125;
+            project_time["two-weeks"]=100;
+            project_time["na"]=100;
 
             var project_name = new Array();
-            project_name["content"]=0.03;
-            project_name["proofreading"]=10;
-            project_name["pitch"]=25;
-            project_name["ux"]=15;
+            project_name["content"]=4;
+            project_name["proofreading"]=1400;
+            project_name["pitch"]=2400;
+            project_name["ux"]=1400;
 
             var project_theme = new Array();
-            project_theme["general"]=1;
-            project_theme["formal"]=1.25;
-            project_theme["tech"]=1.5;
-            project_theme["other"]=1.2;
+            project_theme["general"]=100;
+            project_theme["formal"]=125;
+            project_theme["tech"]=150;
+            project_theme["other"]=100;
 
             function getProjectType() {
                 var typeRadio = document.getElementsByName('project-type');
@@ -750,7 +760,7 @@
 
                 var total = getProjectType() * getProjectTime() * getProjectName() * getProjectTheme() * parseInt(input);
                 
-                document.getElementById('output').innerHTML = "$ " + total;
+                document.getElementById('output').innerHTML = (total/100000000).toFixed(0) + " USD";
 
                 if (document.getElementById('long-term').checked) {
                     return calculateTotalLong();
@@ -764,7 +774,7 @@
 
                 var totalLong = getProjectType() * getProjectName() * getProjectTheme() * parseInt(input);
                 
-                document.getElementById('output').innerHTML = "$ " + totalLong;
+                document.getElementById('output').innerHTML = (totalLong/100000000).toFixed(0) + " USD";
 
                 if (document.getElementById('short-term').checked) {
                     return calculateTotal();
@@ -815,7 +825,7 @@
         </script>
 
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        
+        <script src='https://cdn.jsdelivr.net/npm/big.js@6.2.1/big.min.js'></script>
         <script>
             var mouseDown = 0;
             document.body.onmousedown = function() { 
